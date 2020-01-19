@@ -1,0 +1,7 @@
+C:\Users\dezje\Documents\Curso C#\9 - Entrada e saida [I O] com streams\ByteBankImportacaoExportacao\bin\Debug\ByteBankImportacaoExportacao.exe.config
+C:\Users\dezje\Documents\Curso C#\9 - Entrada e saida [I O] com streams\ByteBankImportacaoExportacao\bin\Debug\ByteBankImportacaoExportacao.exe
+C:\Users\dezje\Documents\Curso C#\9 - Entrada e saida [I O] com streams\ByteBankImportacaoExportacao\bin\Debug\ByteBankImportacaoExportacao.pdb
+C:\Users\dezje\Documents\Curso C#\9 - Entrada e saida [I O] com streams\ByteBankImportacaoExportacao\obj\Debug\ByteBankImportacaoExportacao.csprojAssemblyReference.cache
+C:\Users\dezje\Documents\Curso C#\9 - Entrada e saida [I O] com streams\ByteBankImportacaoExportacao\obj\Debug\ByteBankImportacaoExportacao.csproj.CoreCompileInputs.cache
+C:\Users\dezje\Documents\Curso C#\9 - Entrada e saida [I O] com streams\ByteBankImportacaoExportacao\obj\Debug\ByteBankImportacaoExportacao.exe
+C:\Users\dezje\Documents\Curso C#\9 - Entrada e saida [I O] com streams\ByteBankImportacaoExportacao\obj\Debug\ByteBankImportacaoExportacao.pdb

@@ -1,0 +1,7 @@
+C:\Users\dezje\Documents\Curso C#\PrimeiroPrograma\PrimeiroPrograma\bin\Debug\PrimeiroPrograma.exe.config
+C:\Users\dezje\Documents\Curso C#\PrimeiroPrograma\PrimeiroPrograma\bin\Debug\PrimeiroPrograma.exe
+C:\Users\dezje\Documents\Curso C#\PrimeiroPrograma\PrimeiroPrograma\bin\Debug\PrimeiroPrograma.pdb
+C:\Users\dezje\Documents\Curso C#\PrimeiroPrograma\PrimeiroPrograma\obj\Debug\PrimeiroPrograma.csprojAssemblyReference.cache
+C:\Users\dezje\Documents\Curso C#\PrimeiroPrograma\PrimeiroPrograma\obj\Debug\PrimeiroPrograma.csproj.CoreCompileInputs.cache
+C:\Users\dezje\Documents\Curso C#\PrimeiroPrograma\PrimeiroPrograma\obj\Debug\PrimeiroPrograma.exe
+C:\Users\dezje\Documents\Curso C#\PrimeiroPrograma\PrimeiroPrograma\obj\Debug\PrimeiroPrograma.pdb

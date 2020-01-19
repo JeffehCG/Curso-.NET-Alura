@@ -1,0 +1,7 @@
+C:\Users\dezje\Documents\Curso C#\1- PrimeiroPrograma\2- CriandoVariaveis\bin\Debug\2- CriandoVariaveis.exe.config
+C:\Users\dezje\Documents\Curso C#\1- PrimeiroPrograma\2- CriandoVariaveis\bin\Debug\2- CriandoVariaveis.exe
+C:\Users\dezje\Documents\Curso C#\1- PrimeiroPrograma\2- CriandoVariaveis\bin\Debug\2- CriandoVariaveis.pdb
+C:\Users\dezje\Documents\Curso C#\1- PrimeiroPrograma\2- CriandoVariaveis\obj\Debug\2- CriandoVariaveis.csproj.CoreCompileInputs.cache
+C:\Users\dezje\Documents\Curso C#\1- PrimeiroPrograma\2- CriandoVariaveis\obj\Debug\2- CriandoVariaveis.exe
+C:\Users\dezje\Documents\Curso C#\1- PrimeiroPrograma\2- CriandoVariaveis\obj\Debug\2- CriandoVariaveis.pdb
+C:\Users\dezje\Documents\Curso C#\1- PrimeiroPrograma\2- CriandoVariaveis\obj\Debug\2- CriandoVariaveis.csprojAssemblyReference.cache

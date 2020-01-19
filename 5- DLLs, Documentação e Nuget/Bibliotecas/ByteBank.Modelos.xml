@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ByteBank.Modelos</name>
+    </assembly>
+    <members>
+        <member name="T:_01__ByteBank.ContaCorrente">
+            <summary>
+            Esta classe define uma Conta Corrente do banco ByteBank
+            </summary>
+        </member>
+        <member name="M:_01__ByteBank.ContaCorrente.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Cria uma instancia de ContaCorrente com os argumentos utilizados
+            </summary>
+            <param name="numeroAgencia"> Representa o valor da propriedade <see cref="P:_01__ByteBank.ContaCorrente.Agencia"/>, e deve possuir um valor maior que zero</param>
+            <param name="numeroConta"> Representa o valor da propriedade <see cref="P:_01__ByteBank.ContaCorrente.Numero"/>, e deve possuir um valor maior que zero</param>
+        </member>
+    </members>
+</doc>

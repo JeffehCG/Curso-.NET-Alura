@@ -1,0 +1,9 @@
+C:\Users\dezje\Documents\Curso C#\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.csprojAssemblyReference.cache
+C:\Users\dezje\Documents\Curso C#\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.csproj.CoreCompileInputs.cache
+C:\Users\dezje\Documents\Curso C#\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\ByteBank.SistemaInterno.exe.config
+C:\Users\dezje\Documents\Curso C#\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\ByteBank.SistemaInterno.exe
+C:\Users\dezje\Documents\Curso C#\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\ByteBank.SistemaInterno.pdb
+C:\Users\dezje\Documents\Curso C#\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\ByteBank.Modelos.dll
+C:\Users\dezje\Documents\Curso C#\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.csproj.CopyComplete
+C:\Users\dezje\Documents\Curso C#\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.exe
+C:\Users\dezje\Documents\Curso C#\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.pdb

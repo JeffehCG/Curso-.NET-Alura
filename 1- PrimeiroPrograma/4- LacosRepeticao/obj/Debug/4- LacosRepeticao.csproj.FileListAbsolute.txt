@@ -1,0 +1,7 @@
+C:\Users\dezje\Documents\Curso C#\1- PrimeiroPrograma\4- LacosRepeticao\bin\Debug\4- LacosRepeticao.exe.config
+C:\Users\dezje\Documents\Curso C#\1- PrimeiroPrograma\4- LacosRepeticao\bin\Debug\4- LacosRepeticao.exe
+C:\Users\dezje\Documents\Curso C#\1- PrimeiroPrograma\4- LacosRepeticao\bin\Debug\4- LacosRepeticao.pdb
+C:\Users\dezje\Documents\Curso C#\1- PrimeiroPrograma\4- LacosRepeticao\obj\Debug\4- LacosRepeticao.csprojAssemblyReference.cache
+C:\Users\dezje\Documents\Curso C#\1- PrimeiroPrograma\4- LacosRepeticao\obj\Debug\4- LacosRepeticao.csproj.CoreCompileInputs.cache
+C:\Users\dezje\Documents\Curso C#\1- PrimeiroPrograma\4- LacosRepeticao\obj\Debug\4- LacosRepeticao.exe
+C:\Users\dezje\Documents\Curso C#\1- PrimeiroPrograma\4- LacosRepeticao\obj\Debug\4- LacosRepeticao.pdb
