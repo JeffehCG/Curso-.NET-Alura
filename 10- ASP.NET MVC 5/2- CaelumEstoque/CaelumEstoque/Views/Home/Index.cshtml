@@ -1,18 +1,12 @@
 ﻿
 @{
-    Layout = null;
+// abaixo é definido aonde essa View sera carregada
+//Layout = "~/Views/Shared/_Layout.cshtml";
+
+// Ela chama o layout page _Layout.cshtml, e o conteudo html dessa View sera carregado dentro da tag que contem @RenderBody()
 }
 
-<!DOCTYPE html>
+@* O codigo Acima esta comentado, pois esta sendo usado um bloco de variaveis globais em _ViewStart.cshtml, onde esta sendo usado em todas Views *@
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    <div> 
-        <h1>Página Inicial da aplicação</h1>
-    </div>
-</body>
-</html>
+<h1>Página Inicial da aplicação</h1>
+

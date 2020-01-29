@@ -1,0 +1,14 @@
+﻿
+<ul class="nav">
+    <li>ID: @ViewBag.Produto.Id </li>
+    <li>Nome: @ViewBag.Produto.Nome</li>
+    <li>Quantidade: @ViewBag.Produto.Quantidade</li>
+    <li>Preço: @ViewBag.Produto.Preco </li>
+    <li>Descrição: @ViewBag.Produto.Descricao</li>
+    <li>Categoria: @ViewBag.Produto.Categoria.Nome </li>
+
+    @* Caso queira chamara uma ActionResult de outra Controller, é passado o nome da Controller no terceiro parametro  *@
+    @*@Html.ActionLink("Voltar Lista Produtos", "Index")*@
+    @* Ou *@
+</ul>
+<h3>@Html.RouteLink("Voltar Lista Produtos", "ListaProdutos")</h3>

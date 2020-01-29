@@ -1,0 +1,34 @@
+﻿
+@{
+    Layout = null;
+}
+
+@* Pagina de Layout, onde sera compartilhada com varias outras *@
+@* Por padrão, layout pages são nomeadas com um "_" na frente *@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+    @* Importando arquivos CSS *@
+    <link rel="stylesheet" href="~/Content/Css/bootstrap.css" />
+    <link rel="stylesheet" href="~/Content/Css/Site.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <ul class="nav nav-pills pull-right">
+                <li>@Html.ActionLink("Produtos", "Index", "Produto")</li>
+                <li>@Html.ActionLink("Categorias", "Index", "Categoria")</li>
+            </ul>
+            <h3 class="text-muted">Caelum Estoque</h3>
+        </div>
+        @* Dentro da div abaixo (conteudo) sera carregado cada View *@
+        <div id="conteudo">
+            @* Esse metodo define que aqui sera onde as Views seram carregadas *@
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>

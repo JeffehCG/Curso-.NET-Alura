@@ -10,8 +10,12 @@ namespace CaelumEstoque.Models
     {
         public int Id { get; set; }
 
+        // Regra de validação atributo
+        [Required, StringLength(20)]
         public String Nome { get; set; }
 
+        // Intervalo preço
+        [Range(0.0, 10000.0)]
         public float Preco { get; set; }
 
         public CategoriaDoProduto Categoria { get; set; }
