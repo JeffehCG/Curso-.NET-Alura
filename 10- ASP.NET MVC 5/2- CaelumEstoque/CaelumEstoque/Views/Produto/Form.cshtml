@@ -1,5 +1,9 @@
 ﻿@* Dando submit no formulario e direcionado para a Controller Adicona, que ira fazer o cadastro *@
 <form action="/Produto/Adiciona" method="post">
+
+    @* Gerando token de segurança, para garantir que sites maliciosos não consigam sobreescrever esse formulario, e enviar outro na requisição *@
+    @Html.AntiForgeryToken();
+
     @Html.ValidationMessage("produto.Invalido")
 
     <label for="nome">Nome:</label>

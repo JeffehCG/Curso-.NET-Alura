@@ -1,4 +1,5 @@
 ﻿using CaelumEstoque.DAO;
+using CaelumEstoque.Filtros;
 using CaelumEstoque.Models;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,10 @@ using System.Web.Mvc;
 
 namespace CaelumEstoque.Controllers
 {
+    // Antes de qualquer ActionResult ser executada, sera feita a validação de login (AutorizacaoFilterAttribute) "Classe criada em Filtros/AutorizacaoFilterAttribute"
+    // Caso nem todas Actions precisem de autenticação, atribuir a annotation abaixo apenas para as desejadas 
+    // Caso todas controlles necessitem dessa autenticação, criar a classe FilterConfig() em App_Start, lá seram definidos todos filtros globais
+    [AutorizacaoFilterAttribute]
     public class ProdutoController : Controller
     {
         // Definindo url customizada navegação
@@ -26,6 +31,9 @@ namespace CaelumEstoque.Controllers
             return View(produtos);
         }
 
+        // Anotação para fazer a validação do AntiForgeryToken() gerado pelo formulario
+        // Caso não seja valido recusa a requisição
+        [ValidateAntiForgeryToken]
         public ActionResult Form()
         {
             // Listando categorias para o dropdown do formulario
@@ -95,6 +103,18 @@ namespace CaelumEstoque.Controllers
             Produto produto = dao.BuscaPorId(Id);
             ViewBag.Produto = produto;
             return View();
+        }
+
+        // Utilizando requisições AJAX(Assincronas) para recarregar apenas uma parte da paginas
+        public ActionResult DecrementaQuantidade(int Id)
+        {
+            ProdutosDAO dao = new ProdutosDAO();
+            Produto produto = dao.BuscaPorId(Id);
+            produto.Quantidade--;
+            dao.Atualiza(produto);
+
+            // Enviando o produto atualizado para View(Para o metodo javascript atualizar())
+            return Json(produto);
         }
     }
 }

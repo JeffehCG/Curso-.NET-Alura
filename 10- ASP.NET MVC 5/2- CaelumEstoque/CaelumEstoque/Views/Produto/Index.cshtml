@@ -6,6 +6,7 @@
             <th>ID</th>
             <th>Nome</th>
             <th>Quantidade</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -21,10 +22,31 @@
                 @* OU *@
                 @* Link de navegação, RouteLink ,primeiro parametro é o texto do link, segundo é o nome da rota, terceira os parametros passados para ActionResult*@
                 @*@Html.RouteLink(produto.Nome, "VisualizaProduto", new { Id = produto.Id })*@
-                <td>@produto.Quantidade</td>
+                <td id="quantidade@(produto.Id)">@produto.Quantidade</td>
+                <td>
+                    <button onclick="decrementar(@produto.Id)">Decrementar</button>
+                </td>
             </tr>
         }
     </tbody>
 </table>
 
 <h3>@Html.ActionLink("Adicionar Produto", "Form")</h3>
+
+@* Abaixo utilizando AJAX, para fazer requisições assincronas, e carregar apenas uma parte da pagina *@
+<script type="text/javascript" src="~/Scripts/jquery-1.10.2.js"></script>
+<script type="text/javascript">
+
+    // Metodo para decrementar
+    function decrementar(produtoId) {
+        var url = "@Url.Action("DecrementaQuantidade", "Produto")"
+        // Recebe a url da requisição, os atributos da requisição, e uma callback que sera executado quando a requisição receber uma resposta do servidor
+        $.post(url, { Id: produtoId }, atualizar);
+    }
+
+    // Metodo para atualizar a quantidade dos procedimentos, quando o servidor devolver a resposta para o AJAX
+    function atualizar(resposta) {
+        // Pegando elemento html pelo Id
+        $("#quantidade" + resposta.Id).html(resposta.Quantidade);
+    }
+</script>
