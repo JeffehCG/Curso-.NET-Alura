@@ -10,7 +10,7 @@
 namespace _02__WAConhecendoComponentes {
     
     
-    public partial class wfComponentes1 {
+    public partial class wfTabuada {
         
         /// <summary>
         /// Controle form1.
@@ -22,57 +22,48 @@ namespace _02__WAConhecendoComponentes {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Controle txtSite.
+        /// Controle dlNumeros.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSite;
+        protected global::System.Web.UI.WebControls.DropDownList dlNumeros;
         
         /// <summary>
-        /// Controle txtEndereco.
+        /// Controle btExecutar.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEndereco;
+        protected global::System.Web.UI.WebControls.Button btExecutar;
         
         /// <summary>
-        /// Controle lbEndereco.
+        /// Controle lbTabuada.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox lbEndereco;
+        protected global::System.Web.UI.WebControls.ListBox lbTabuada;
         
         /// <summary>
-        /// Controle btInserir.
+        /// Controle PlaceHolder.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btInserir;
+        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolder;
         
         /// <summary>
-        /// Controle btSelecionar.
+        /// Controle tbTabuada.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btSelecionar;
-        
-        /// <summary>
-        /// Controle dlSite.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dlSite;
+        protected global::System.Web.UI.WebControls.Table tbTabuada;
     }
 }
