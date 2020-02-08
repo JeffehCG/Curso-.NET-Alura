@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="wfTabuada.aspx.cs" Inherits="_02__WAConhecendoComponentes.wfTabuada" %>
 
+<%@ Register src="~/UserControls/wucMenu.ascx" tagname="wucMenu" tagprefix="uc1" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -10,6 +12,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <%-- Componente utilizado em varias paginas (wucMenu.ascx) --%>
+            <uc1:wucMenu ID="wucMenu1" runat="server" />
             <h1>Tabuada</h1>
             <p>
                 <asp:DropDownList ID="dlNumeros" runat="server">

@@ -11,7 +11,7 @@ namespace _02__WAConhecendoComponentes
 {
 
 
-    public partial class wfTabuada
+    public partial class wfUpLoad
     {
 
         /// <summary>
@@ -24,57 +24,75 @@ namespace _02__WAConhecendoComponentes
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// wucMenu1 control.
+        /// Label1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::_02__WAConhecendoComponentes.wucMenu wucMenu1;
+        protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// dlNumeros control.
+        /// fuArquivo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList dlNumeros;
+        protected global::System.Web.UI.WebControls.FileUpload fuArquivo;
 
         /// <summary>
-        /// btExecutar control.
+        /// Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btExecutar;
+        protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// lbTabuada control.
+        /// txbNome control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox lbTabuada;
+        protected global::System.Web.UI.WebControls.TextBox txbNome;
 
         /// <summary>
-        /// PlaceHolder control.
+        /// Label3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolder;
+        protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// tbTabuada control.
+        /// txbTamanho control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table tbTabuada;
+        protected global::System.Web.UI.WebControls.TextBox txbTamanho;
+
+        /// <summary>
+        /// btEnviar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btEnviar;
+
+        /// <summary>
+        /// btEnviarMultiplos control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btEnviarMultiplos;
     }
 }

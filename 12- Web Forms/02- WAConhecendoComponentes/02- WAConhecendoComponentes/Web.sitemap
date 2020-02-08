@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="" title=""  description="">
+    <siteMapNode url="wfCursos.aspx" title="Cursos"  description="Cursos ofertados" />
+    <siteMapNode url="wfComponentes.aspx" title="Componentes"  description="" />
+    <siteMapNode url="" title="Cadastro"  description="">
+      <siteMapNode url="" title="Clientes"  description="" />
+      <siteMapNode url="" title="Fornecedores"  description="" />
+    </siteMapNode>
+    <siteMapNode url="" title="Relatorios"  description="" />
+  </siteMapNode>
+</siteMap>
+<!-- Pagina de mapeamento do site-->

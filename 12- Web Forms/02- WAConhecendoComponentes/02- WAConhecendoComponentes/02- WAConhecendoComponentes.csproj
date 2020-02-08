@@ -67,12 +67,63 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\image1.jpg" />
+    <Content Include="Images\image2.jpeg" />
+    <Content Include="Images\image3.jpg" />
+    <Content Include="index.aspx" />
+    <Content Include="wfMenu.aspx" />
+    <Content Include="wfUpLoad.aspx" />
     <Content Include="Web.config" />
+    <Content Include="wfAlteraTamanhoFonte.aspx" />
+    <Content Include="wfBasicoJavascript.aspx" />
     <Content Include="wfComponentes1.aspx" />
+    <Content Include="wfCursos.aspx" />
+    <Content Include="wfDiasDeVida.aspx" />
+    <Content Include="wfParOuImparFatorial.aspx" />
+    <Content Include="wfSitesParceiros.aspx" />
     <Content Include="wfTabuada.aspx" />
+    <Content Include="wfValidator.aspx" />
+    <Content Include="wfWizard.aspx" />
+    <Content Include="UserControls\wucMenu.ascx" />
+    <Content Include="XMLs\propragandas.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="wfMenu.aspx.cs">
+      <DependentUpon>wfMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfMenu.aspx.designer.cs">
+      <DependentUpon>wfMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfUpLoad.aspx.cs">
+      <DependentUpon>wfUpLoad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfUpLoad.aspx.designer.cs">
+      <DependentUpon>wfUpLoad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfAlteraTamanhoFonte.aspx.cs">
+      <DependentUpon>wfAlteraTamanhoFonte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfAlteraTamanhoFonte.aspx.designer.cs">
+      <DependentUpon>wfAlteraTamanhoFonte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfBasicoJavascript.aspx.cs">
+      <DependentUpon>wfBasicoJavascript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfBasicoJavascript.aspx.designer.cs">
+      <DependentUpon>wfBasicoJavascript.aspx</DependentUpon>
+    </Compile>
     <Compile Include="wfComponentes1.aspx.cs">
       <DependentUpon>wfComponentes1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -80,12 +131,61 @@
     <Compile Include="wfComponentes1.aspx.designer.cs">
       <DependentUpon>wfComponentes1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="wfCursos.aspx.cs">
+      <DependentUpon>wfCursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfCursos.aspx.designer.cs">
+      <DependentUpon>wfCursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfDiasDeVida.aspx.cs">
+      <DependentUpon>wfDiasDeVida.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfDiasDeVida.aspx.designer.cs">
+      <DependentUpon>wfDiasDeVida.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfParOuImparFatorial.aspx.cs">
+      <DependentUpon>wfParOuImparFatorial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfParOuImparFatorial.aspx.designer.cs">
+      <DependentUpon>wfParOuImparFatorial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfSitesParceiros.aspx.cs">
+      <DependentUpon>wfSitesParceiros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfSitesParceiros.aspx.designer.cs">
+      <DependentUpon>wfSitesParceiros.aspx</DependentUpon>
+    </Compile>
     <Compile Include="wfTabuada.aspx.cs">
       <DependentUpon>wfTabuada.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="wfTabuada.aspx.designer.cs">
       <DependentUpon>wfTabuada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfValidator.aspx.cs">
+      <DependentUpon>wfValidator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfValidator.aspx.designer.cs">
+      <DependentUpon>wfValidator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfWizard.aspx.cs">
+      <DependentUpon>wfWizard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfWizard.aspx.designer.cs">
+      <DependentUpon>wfWizard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\wucMenu.ascx.cs">
+      <DependentUpon>wucMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\wucMenu.ascx.designer.cs">
+      <DependentUpon>wucMenu.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -96,6 +196,10 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Web.sitemap" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Uploads\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
