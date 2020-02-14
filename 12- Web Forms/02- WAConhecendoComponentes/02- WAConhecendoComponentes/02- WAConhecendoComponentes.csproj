@@ -67,10 +67,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Agenda.mdf" />
+    <Content Include="App_Data\Agenda_log.ldf">
+      <DependentUpon>Agenda.mdf</DependentUpon>
+    </Content>
+    <Content Include="ExemMarsterPage.aspx" />
     <Content Include="Images\image1.jpg" />
     <Content Include="Images\image2.jpeg" />
     <Content Include="Images\image3.jpg" />
     <Content Include="index.aspx" />
+    <Content Include="wfData.aspx" />
+    <Content Include="wfGridView.aspx" />
+    <Content Include="wfListView.aspx" />
     <Content Include="wfMenu.aspx" />
     <Content Include="wfUpLoad.aspx" />
     <Content Include="Web.config" />
@@ -88,6 +96,13 @@
     <Content Include="XMLs\propragandas.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExemMarsterPage.aspx.cs">
+      <DependentUpon>ExemMarsterPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExemMarsterPage.aspx.designer.cs">
+      <DependentUpon>ExemMarsterPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -95,7 +110,35 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
+    <Compile Include="MasterPages\Modelo.Master.cs">
+      <DependentUpon>Modelo.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPages\Modelo.Master.designer.cs">
+      <DependentUpon>Modelo.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="wfData.aspx.cs">
+      <DependentUpon>wfData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfData.aspx.designer.cs">
+      <DependentUpon>wfData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfGridView.aspx.cs">
+      <DependentUpon>wfGridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfGridView.aspx.designer.cs">
+      <DependentUpon>wfGridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfListView.aspx.cs">
+      <DependentUpon>wfListView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfListView.aspx.designer.cs">
+      <DependentUpon>wfListView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="wfMenu.aspx.cs">
       <DependentUpon>wfMenu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -189,6 +232,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MasterPages\Modelo.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
