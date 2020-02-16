@@ -14,9 +14,18 @@
             <br />
             <asp:TextBox ID="txbSalarioBruto" runat="server"></asp:TextBox>
             <br />
+            <br />
             <asp:Label ID="Label2" runat="server" Text="Percentual de desconto"></asp:Label>
             <br />
-            <asp:TextBox ID="txbPercentual" runat="server"></asp:TextBox>
+            <%-- AutoPostBack="true" - necessario para o evento SelectedIndexChanged funcionar --%>
+            <asp:RadioButtonList ID="rbPerDesconto" runat="server" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged" RepeatDirection="Horizontal" AutoPostBack="true">
+                <asp:ListItem Selected="True" Value="10">10%</asp:ListItem>
+                <asp:ListItem Value="20">20%</asp:ListItem>
+                <asp:ListItem Value="30">30%</asp:ListItem>
+                <asp:ListItem>Outro</asp:ListItem>
+            </asp:RadioButtonList>
+            <asp:TextBox ID="txbPercentual" runat="server" Visible="False"></asp:TextBox>
+            <br />
             <br />
 
             <%-- PostBackUrl= para que Pagina que sera redirecionada, e enviado os dados via POST ao acionar o botão --%>

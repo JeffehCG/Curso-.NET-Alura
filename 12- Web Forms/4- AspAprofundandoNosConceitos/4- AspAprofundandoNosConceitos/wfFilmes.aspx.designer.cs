@@ -10,7 +10,7 @@
 namespace _4__AspAprofundandoNosConceitos {
     
     
-    public partial class wfSalarioMinimo {
+    public partial class wfFilmes {
         
         /// <summary>
         /// Controle form1.
@@ -31,40 +31,31 @@ namespace _4__AspAprofundandoNosConceitos {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// Controle txbSalarioBruto.
+        /// Controle ddlFilmes.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txbSalarioBruto;
+        protected global::System.Web.UI.WebControls.DropDownList ddlFilmes;
         
         /// <summary>
-        /// Controle Label2.
+        /// Controle txbFilme.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.TextBox txbFilme;
         
         /// <summary>
-        /// Controle rbPerDesconto.
+        /// Controle btInserir.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList rbPerDesconto;
-        
-        /// <summary>
-        /// Controle txbPercentual.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txbPercentual;
+        protected global::System.Web.UI.WebControls.Button btInserir;
         
         /// <summary>
         /// Controle btEnviar.

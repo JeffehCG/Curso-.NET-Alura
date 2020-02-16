@@ -10,7 +10,7 @@
 namespace _4__AspAprofundandoNosConceitos {
     
     
-    public partial class wfSalarioMinimo {
+    public partial class wfLogin {
         
         /// <summary>
         /// Controle form1.
@@ -22,6 +22,15 @@ namespace _4__AspAprofundandoNosConceitos {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// Controle Panel1.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel1;
+        
+        /// <summary>
         /// Controle Label1.
         /// </summary>
         /// <remarks>
@@ -31,13 +40,13 @@ namespace _4__AspAprofundandoNosConceitos {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// Controle txbSalarioBruto.
+        /// Controle txbLogin.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txbSalarioBruto;
+        protected global::System.Web.UI.WebControls.TextBox txbLogin;
         
         /// <summary>
         /// Controle Label2.
@@ -49,30 +58,21 @@ namespace _4__AspAprofundandoNosConceitos {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// Controle rbPerDesconto.
+        /// Controle txbSenha.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList rbPerDesconto;
+        protected global::System.Web.UI.WebControls.TextBox txbSenha;
         
         /// <summary>
-        /// Controle txbPercentual.
+        /// Controle btEntrar.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txbPercentual;
-        
-        /// <summary>
-        /// Controle btEnviar.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btEnviar;
+        protected global::System.Web.UI.WebControls.Button btEntrar;
     }
 }

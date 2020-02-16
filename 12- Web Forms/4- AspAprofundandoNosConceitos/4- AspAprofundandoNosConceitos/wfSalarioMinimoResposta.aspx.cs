@@ -20,16 +20,26 @@ namespace _4__AspAprofundandoNosConceitos
             Response.Write($"<h3>Percentual Desconto: {Request.Form["txbPercentual"]}</h3>");
             // Pegando apenas por GET
             Response.Write($"<h3>Nome: {Request.QueryString["nome"]}</h3>");
+            // Pegando o componente completo passado pela outra pagina, e não apenas o valor
+            RadioButtonList radioButton = Page.PreviousPage != null ?(RadioButtonList)Page.PreviousPage.FindControl("rbPerDesconto") : new RadioButtonList();
 
-
-            if(Request.Form["txbSalarioBruto"] == null || Request.Form["txbPercentual"] == null)
+            // Voltando para pagina anterios caso valores sejam invalidos
+            if (String.IsNullOrEmpty(Request.Form["txbSalarioBruto"]) || (String.IsNullOrEmpty(Request.Form["txbPercentual"]) && radioButton.SelectedIndex == 3))
             {
                 Response.Redirect("~/wfSalarioMinimo.aspx");
             }
 
             // Calculando Salario
             Double salarioBruto = Convert.ToDouble(Request.Form["txbSalarioBruto"]);
-            Double percentualDesc = Convert.ToDouble(Request.Form["txbPercentual"]);
+            Double percentualDesc;
+            if (radioButton.SelectedIndex != 3)
+            {
+                percentualDesc = Convert.ToDouble(radioButton.SelectedItem.Value);
+            }
+            else
+            {
+                percentualDesc = Convert.ToDouble(Request.Form["txbPercentual"]);
+            }
             Double desconto = (salarioBruto * percentualDesc) / 100;
             Double salarioLiquido = salarioBruto - desconto;
 

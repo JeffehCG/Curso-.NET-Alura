@@ -68,11 +68,43 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Web.config" />
+    <Content Include="wfFilmes.aspx" />
+    <Content Include="wfFilmesResposta.aspx" />
+    <Content Include="wfLogin.aspx" />
+    <Content Include="wfLoginAcesso.aspx" />
     <Content Include="wfSalarioMinimo.aspx" />
     <Content Include="wfSalarioMinimoResposta.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="wfFilmes.aspx.cs">
+      <DependentUpon>wfFilmes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfFilmes.aspx.designer.cs">
+      <DependentUpon>wfFilmes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfFilmesResposta.aspx.cs">
+      <DependentUpon>wfFilmesResposta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfFilmesResposta.aspx.designer.cs">
+      <DependentUpon>wfFilmesResposta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfLogin.aspx.cs">
+      <DependentUpon>wfLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfLogin.aspx.designer.cs">
+      <DependentUpon>wfLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="wfLoginAcesso.aspx.cs">
+      <DependentUpon>wfLoginAcesso.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="wfLoginAcesso.aspx.designer.cs">
+      <DependentUpon>wfLoginAcesso.aspx</DependentUpon>
+    </Compile>
     <Compile Include="wfSalarioMinimo.aspx.cs">
       <DependentUpon>wfSalarioMinimo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

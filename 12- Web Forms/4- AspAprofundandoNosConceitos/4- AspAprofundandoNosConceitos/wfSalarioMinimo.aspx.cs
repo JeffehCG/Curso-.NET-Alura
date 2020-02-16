@@ -13,5 +13,15 @@ namespace _4__AspAprofundandoNosConceitos
         {
 
         }
+
+        // Ação executada quando o index é alterado
+        protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txbPercentual.Visible = false;
+            if (rbPerDesconto.SelectedIndex == 3)
+            {
+                txbPercentual.Visible = true;
+            }
+        }
     }
 }

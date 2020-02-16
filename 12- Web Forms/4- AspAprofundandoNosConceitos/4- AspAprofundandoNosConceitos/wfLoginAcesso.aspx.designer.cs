@@ -10,7 +10,7 @@
 namespace _4__AspAprofundandoNosConceitos {
     
     
-    public partial class wfSalarioMinimo {
+    public partial class wfLoginAcesso {
         
         /// <summary>
         /// Controle form1.
@@ -22,57 +22,93 @@ namespace _4__AspAprofundandoNosConceitos {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Controle Label1.
+        /// Controle lbLogin.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lbLogin;
         
         /// <summary>
-        /// Controle txbSalarioBruto.
+        /// Controle btApagar.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txbSalarioBruto;
+        protected global::System.Web.UI.WebControls.Button btApagar;
         
         /// <summary>
-        /// Controle Label2.
+        /// Controle btListar.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Button btListar;
         
         /// <summary>
-        /// Controle rbPerDesconto.
+        /// Controle lbIdSession.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButtonList rbPerDesconto;
+        protected global::System.Web.UI.WebControls.Label lbIdSession;
         
         /// <summary>
-        /// Controle txbPercentual.
+        /// Controle lbContador.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txbPercentual;
+        protected global::System.Web.UI.WebControls.Label lbContador;
         
         /// <summary>
-        /// Controle btEnviar.
+        /// Controle btAdicionarS.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btEnviar;
+        protected global::System.Web.UI.WebControls.Button btAdicionarS;
+        
+        /// <summary>
+        /// Controle btRemoverS.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btRemoverS;
+        
+        /// <summary>
+        /// Controle lbContadorAplicacao.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbContadorAplicacao;
+        
+        /// <summary>
+        /// Controle btAdicionarAplic.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btAdicionarAplic;
+        
+        /// <summary>
+        /// Controle btRemoverA.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btRemoverA;
     }
 }
