@@ -33,7 +33,7 @@
             <br />
             <asp:Label ID="lbContadorAplicacao" runat="server" Text="Label"></asp:Label>
             <asp:Button ID="btAdicionarAplic" runat="server" Text="ADD" OnClick="btAdicionarAplic_Click" />
-            <asp:Button ID="btRemoverA" runat="server" Text="Remover" />
+            <asp:Button ID="btRemoverA" runat="server" Text="Remover" OnClick="btRemoverA_Click" />
             
         </div>
     </form>
