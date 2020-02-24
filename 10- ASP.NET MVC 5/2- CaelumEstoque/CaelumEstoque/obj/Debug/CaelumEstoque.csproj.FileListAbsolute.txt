@@ -62,7 +62,6 @@ C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\10- ASP.NET MVC 5\2- CaelumEsto
 C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\10- ASP.NET MVC 5\2- CaelumEstoque\CaelumEstoque\bin\System.Web.Helpers.xml
 C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\10- ASP.NET MVC 5\2- CaelumEstoque\CaelumEstoque\bin\System.Web.Mvc.xml
 C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\10- ASP.NET MVC 5\2- CaelumEstoque\CaelumEstoque\obj\Debug\CaelumEstoque.csprojAssemblyReference.cache
-C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\10- ASP.NET MVC 5\2- CaelumEstoque\CaelumEstoque\obj\Debug\CaelumEstoque.csproj.CoreCompileInputs.cache
 C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\10- ASP.NET MVC 5\2- CaelumEstoque\CaelumEstoque\obj\Debug\CaelumEstoque.csproj.CopyComplete
 C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\10- ASP.NET MVC 5\2- CaelumEstoque\CaelumEstoque\obj\Debug\CaelumEstoque.dll
 C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\10- ASP.NET MVC 5\2- CaelumEstoque\CaelumEstoque\obj\Debug\CaelumEstoque.pdb

@@ -1,0 +1,84 @@
+﻿@* Definindo o tipo da @Model *@
+@model LojaRazor.Models.Usuario
+
+@* Gerando formulario com Razor *@
+@using (Html.BeginForm("Cadastra", "Usuarios", FormMethod.Post))
+{
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        @* Gerando Label *@
+        @Html.LabelFor(usuario => usuario.Nome, "Nome:")
+        @* Gerando Input *@
+        @Html.TextBoxFor(usuario => usuario.Nome)
+        @* Gerando mensagem de validação *@
+        @Html.ValidationMessageFor(usuario => usuario.Nome)
+
+        @Html.LabelFor(u => u.Email, "Email:")
+        @Html.TextBoxFor(u => u.Email)
+        @Html.ValidationMessageFor(u => u.Email)
+
+        @* Criando RadioButton *@
+        @Html.LabelFor(u => u.Sexo, "Sexo:")
+        <div class="control-group">
+            <label class="inline radio">
+                @Html.RadioButtonFor(u => u.Sexo, LojaRazor.Models.Enuns.Sexo.Masculino)
+                Masculino
+            </label>
+            <label class="inline radio">
+                @Html.RadioButtonFor(u => u.Sexo, LojaRazor.Models.Enuns.Sexo.Feminino)
+                Feminino
+            </label>
+        </div>
+
+        @Html.LabelFor(u => u.Senha, "Senha:")
+        @Html.PasswordFor(u => u.Senha)
+        @Html.ValidationMessageFor(u => u.Senha)
+
+        @Html.LabelFor(u => u.DataDeNascimento, "Data de Nascimento:")
+        @Html.TextBoxFor(u => u.DataDeNascimento)
+        @Html.ValidationMessageFor(u => u.DataDeNascimento)
+    </fieldset>
+
+    <fieldset>
+        <legend>Dados de Entrega</legend>
+
+        @* Usando DropDowList *@
+        @Html.LabelFor(u => u.Endereco, "Estado:")
+        @Html.DropDownListFor(u => u.Estado, new SelectList(Enum.GetValues(typeof(LojaRazor.Models.Enuns.Estado))))
+
+        @Html.LabelFor(u => u.Endereco, "Endereço:")
+        @Html.TextBoxFor(u => u.Endereco)
+        @Html.ValidationMessageFor(u => u.Endereco)
+
+        @Html.LabelFor(u => u.Complemento, "Complemento:")
+        @Html.TextBoxFor(u => u.Complemento)
+        @Html.ValidationMessageFor(u => u.Complemento)
+
+        @Html.LabelFor(u => u.CEP, "CEP:")
+        @Html.TextBoxFor(u => u.CEP)
+        @Html.ValidationMessageFor(u => u.CEP)
+
+        @* Criando TextArea *@
+        @Html.LabelFor(u => u.Observacoes, "Observações:")
+        @Html.TextAreaFor(u => u.Observacoes)
+        @Html.ValidationMessageFor(u => u.Observacoes)
+    </fieldset>
+    <div>
+        @* Criando CheckBox *@
+        @Html.CheckBoxFor(u => u.RecebePromocoes)
+        @Html.LabelFor(u => u.RecebePromocoes, "Desejo receber informações sobre promoções")
+    </div>
+
+    <input type="submit" value="Cadastrar" class="btn btn-large" />
+}
+
+@* Scripts para validação, impedindo que os campos sejam enviados errados *@
+@section Scripts{
+    @*<script src="~/Scripts/jquery-1.7.1.js" type="text/javascript"></script>
+        <script src="~/Scripts/jquery.validate.js" type="text/javascript"></script>
+        <script src="~/Scripts/jquery.validate.unobtrusive.js" type="text/javascript"></script>*@
+
+    @* Renderizando bundle de scripts, definido no arquivo  App_Start/BundleConfig.cs*@
+    @Scripts.Render("~/bundles/scripts")
+}

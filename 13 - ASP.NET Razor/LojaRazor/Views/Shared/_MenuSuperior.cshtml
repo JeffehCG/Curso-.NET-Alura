@@ -1,0 +1,31 @@
+﻿@* View Partial - contem um pedaço de bloco de codigo, para ficar mais organizado *@
+
+@using LojaRazor.Internacionalizacao
+@* Importando Classe de Internacionalizacao - sistema utilizado em paises diferentes *@
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        @* Link - parametros actionLink ("Texto do link", "Action do link", "Controller", "Valores passados pela rota", "Classe Css") *@
+        @Html.ActionLink("Loja Razor", "Index", "Home", null, new { @class = "brand" })
+        <ul class="nav">
+            <li>@Html.ActionLink(Mensagens.Sobre, "About", "Home")</li>
+            <li>@Html.ActionLink(Mensagens.Contato, "Contato", "Home")</li>
+        </ul>
+        <p class="navbar-text pull-right">
+            @* Exibindo opções caso o usuario esteja logado *@
+            @if (Session["usuarioLogado"] != null)
+            {
+                @Mensagens.BemVindo
+                @Session["usuarioLogado"]
+                @Html.ActionLink(Mensagens.Logout, "Logout", "Autenticacao")
+            }
+            else
+            {
+                @Mensagens.OlaVisitante
+                @Html.ActionLink(Mensagens.Login, "Index", "Autenticacao")
+                @Mensagens.Ou
+                @Html.ActionLink(Mensagens.CadastreSe, "Form", "Usuarios")
+            }
+        </p>
+    </div>
+</div>

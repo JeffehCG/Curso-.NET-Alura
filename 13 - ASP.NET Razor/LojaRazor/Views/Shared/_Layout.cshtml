@@ -1,0 +1,30 @@
+﻿@* Layout page - layout da pagina que sera exibida em varias outras paginas *@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    @*<link href="~/Content/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/Style.css" rel="stylesheet" />*@
+
+    @* Renderizando bundle de folha de estilos, definido no arquivo  App_Start/BundleConfig.cs*@
+    @Styles.Render("~/bundles/estilos");
+</head>
+<body>
+    @* Utilizando a View Partial _MenuSuperior*@
+    @Html.Partial("_MenuSuperior")
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="span3">
+                @* Chamando outra Controller atravez do metodo Action (Pegando o codigo do menu lateral) *@
+                @Html.Action("Index", "Menu")
+            </div>
+            <div class="span9">
+                @* Define onde ficara o codigo da view que referenciara esse layout page *@
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+@* Definindo uma sessão para receber scripts, false significa que a mesma não é obrigatoria *@
+@RenderSection("Scripts", false)
+</html>

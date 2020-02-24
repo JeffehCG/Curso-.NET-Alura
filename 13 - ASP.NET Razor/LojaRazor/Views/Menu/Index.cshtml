@@ -1,0 +1,18 @@
+﻿@{
+    //Definindo Layout como nullo para não utilizar o layout page padrão 
+    Layout = null;
+}
+@* Menu Lateral *@
+<div class="sidebar-nav well">
+    <ul>
+        @* Pegando dados passados pela controller pela ViewBag *@
+        @foreach (var departamento in ViewBag.Departamentos)
+        {
+            <li class="nav-header">@departamento.Nome</li>
+            foreach (var categoria in departamento.Categorias)
+            {
+                <li>@categoria.Nome</li>
+            }
+        }
+    </ul>
+</div>
