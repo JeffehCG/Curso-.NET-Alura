@@ -5,6 +5,7 @@ using System.Linq;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace ByteBank.Portal.Controller
@@ -25,10 +26,35 @@ namespace ByteBank.Portal.Controller
             var streamRecurso = assembly.GetManifestResourceStream(nomeCompletoResource);
 
             // Lendo arquivo
+            // Lembre-se - mudar Build Action do arquivo para Embedded Resource (Para que o arquivo exista no Assembly em tempo de execução) (Em propriedades)
             var streamLeitura = new StreamReader(streamRecurso);
             var textoPagina = streamLeitura.ReadToEnd();
 
             return textoPagina;
+        }
+
+        protected string View(object modelo, [CallerMemberName]string nomeArquivo = null)
+        {
+            var viewBruta = View(nomeArquivo);
+
+            var todasPropriedadesDoModelo = modelo.GetType().GetProperties();
+
+            // Expressão regular para pegar expressões que estiverem dentro de {{}} no arquivo html
+            var regex = new Regex("\\{{(.*?)\\}}");
+            var viewProcessada = regex.Replace(viewBruta, (match) => 
+            {
+                // Pegando nome da propriedade dentro de {{}}
+                var nomePropriedade = match.Groups[1].Value;
+                // Pegando a propriedade referente no modelo recebido
+                var propriedade = todasPropriedadesDoModelo.Single(prop => prop.Name == nomePropriedade);
+
+                // Pegando o valor da propriedade
+                var valorBruto = propriedade.GetValue(modelo);
+                // Retornando o valor, para substituir o que esta dentro de {{}} pelo valor respectivo
+                return valorBruto?.ToString();
+            });
+
+            return viewProcessada;
         }
     }
 }

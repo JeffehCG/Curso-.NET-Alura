@@ -1,5 +1,4 @@
 C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\14 - Reflection\ByteBank.Portal\ByteBank.Service\bin\Debug\ByteBank.Service.dll
 C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\14 - Reflection\ByteBank.Portal\ByteBank.Service\bin\Debug\ByteBank.Service.pdb
-C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\14 - Reflection\ByteBank.Portal\ByteBank.Service\obj\Debug\ByteBank.Service.csprojAssemblyReference.cache
 C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\14 - Reflection\ByteBank.Portal\ByteBank.Service\obj\Debug\ByteBank.Service.dll
 C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\14 - Reflection\ByteBank.Portal\ByteBank.Service\obj\Debug\ByteBank.Service.pdb

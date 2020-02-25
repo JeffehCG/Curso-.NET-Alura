@@ -1,4 +1,6 @@
-﻿using ByteBank.Service;
+﻿using ByteBank.Portal.Filtros;
+using ByteBank.Portal.Model;
+using ByteBank.Service;
 using ByteBank.Service.Cambio;
 using System;
 using System.Collections.Generic;
@@ -36,27 +38,35 @@ namespace ByteBank.Portal.Controller
             var valorFinal = _cambioService.Calcular("USD", "BRL", 1);
             var textoPagina = View();
 
-            // Substituindo tag coringa da pagina, para valor calculado
-            var textoResultado = textoPagina.Replace("VALOR_EM_REAIS", valorFinal.ToString());
+            // Objeto anonimo, sem uma classe especifica
+            var modeloAnonimo = new
+            {
+                ValorEmReais = valorFinal.ToString()
+            };
 
-            return textoResultado;
+            return View(modeloAnonimo);
         }
 
+        // Funciona apenas em horario comercial
+        // Classe de Attribute em (ByteBank.Portal.Filtros)
+        [ApenasHorarioComercialFiltro]
         public string Calculo(string moedaOrigem, string moedaDestino, decimal valor)
         {
             var valorFinal = _cambioService.Calcular(moedaOrigem, moedaDestino, valor);
-            var textoPagina = View();
 
-            // Substituindo tags coringas da pagina, para valor calculado
-            var textoResultado = textoPagina
-                .Replace("VALOR_MOEDA_ORIGEM", valor.ToString())
-                .Replace("MOEDA_ORIGEM", moedaOrigem)
-                .Replace("VALOR_MOEDA_DESTINO", moedaDestino)
-                .Replace("MOEDA_DESTINO", valorFinal.ToString());
+            // Modelo da View
+            var modelo = new CalculoCambioModel 
+            {
+                MoedaDestino = moedaDestino,
+                MoedaOrigem = moedaOrigem,
+                ValorOrigem = valor,
+                ValorDestino = valorFinal
+            };
 
-            return textoResultado;
+            return View(modelo);
         }
 
+        [ApenasHorarioComercialFiltro]
         public string Calculo(string moedaDestino, decimal valor) =>
             Calculo("BRL", moedaDestino, valor);
     }
