@@ -2,6 +2,7 @@
 using ByteBank.Portal.Model;
 using ByteBank.Service;
 using ByteBank.Service.Cambio;
+using ByteBank.Service.Cartao;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -15,12 +16,19 @@ namespace ByteBank.Portal.Controller
     public class CambioController: ControllerBase
     {
         private ICambioService _cambioService;
-        public CambioController()
+        private ICartaoService _cartaoService;
+
+        // Usando Injeção de dependencias
+        public CambioController(ICambioService cambioService , ICartaoService cartaoService)
         {
-            _cambioService = new CambioTesteService();
+            _cambioService = cambioService;
+            _cartaoService = cartaoService;
         }
 
         // Controller da pagina MXN
+        // Funciona apenas em horario comercial
+        // Classe de Attribute em (ByteBank.Portal.Filtros)
+        [ApenasHorarioComercialFiltro]
         public string MXN()
         {
             var valorFinal = _cambioService.Calcular("MXN", "BRL", 1);
@@ -33,6 +41,7 @@ namespace ByteBank.Portal.Controller
         }
 
         // Controller da pagina USD
+        [ApenasHorarioComercialFiltro]
         public string USD()
         {
             var valorFinal = _cambioService.Calcular("USD", "BRL", 1);
@@ -47,12 +56,10 @@ namespace ByteBank.Portal.Controller
             return View(modeloAnonimo);
         }
 
-        // Funciona apenas em horario comercial
-        // Classe de Attribute em (ByteBank.Portal.Filtros)
-        [ApenasHorarioComercialFiltro]
         public string Calculo(string moedaOrigem, string moedaDestino, decimal valor)
         {
             var valorFinal = _cambioService.Calcular(moedaOrigem, moedaDestino, valor);
+            var cartaoPromocao = _cartaoService.ObterCartaoDeCreditoDeDestaque();
 
             // Modelo da View
             var modelo = new CalculoCambioModel 
@@ -60,7 +67,8 @@ namespace ByteBank.Portal.Controller
                 MoedaDestino = moedaDestino,
                 MoedaOrigem = moedaOrigem,
                 ValorOrigem = valor,
-                ValorDestino = valorFinal
+                ValorDestino = valorFinal,
+                CartaoPromocao = cartaoPromocao
             };
 
             return View(modelo);

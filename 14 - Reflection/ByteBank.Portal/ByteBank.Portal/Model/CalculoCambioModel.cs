@@ -13,5 +13,6 @@ namespace ByteBank.Portal.Model
 
         public decimal ValorOrigem { get; set; }
         public decimal ValorDestino { get; set; }
+        public string CartaoPromocao { get; set; }
     }
 }

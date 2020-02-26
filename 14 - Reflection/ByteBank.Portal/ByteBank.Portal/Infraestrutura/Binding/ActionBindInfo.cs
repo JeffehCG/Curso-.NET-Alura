@@ -30,6 +30,7 @@ namespace ByteBank.Portal.Infraestrutura.Binding
             var possuiParametros = TuplasArgumentosNomeValor.Count > 0;
 
             if (!possuiParametros)
+            
             {
                 // Executando metodo (Passando qual é a controller que contem o mesmo, e os parametros a serem enviados para o metodo)
                 return MethodInfo.Invoke(controller, new object[0]);

@@ -1,4 +1,8 @@
 ﻿using ByteBank.Portal.Controller;
+using ByteBank.Portal.Infraestrutura.IoC;
+using ByteBank.Service;
+using ByteBank.Service.Cambio;
+using ByteBank.Service.Cartao;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +17,8 @@ namespace ByteBank.Portal.Infraestrutura
     {
         // Portas que o HttpListener ficara escutando
         private readonly string[] _prefixos;
+        // Container de injeção de dependencia
+        private readonly IContainer _container = new ContainerSimples();
         public WebApplication(string[] prefixos)
         {
             if (prefixos == null)
@@ -20,7 +26,20 @@ namespace ByteBank.Portal.Infraestrutura
                 throw new ArgumentNullException(nameof(prefixos));
             }
             _prefixos = prefixos;
+
+            Configurar();
         }
+
+        // Configurando a injeção de dependencias
+        private void Configurar()
+        {
+            // Um metodo com duas sobreecargas diferentes (Para entender melhor verifique a classe ContainerSimples)
+
+            _container.Registrar(typeof(ICambioService), typeof(CambioTesteService));
+            // Meneira de Registrar mais performatica
+            _container.Registrar<ICartaoService, CartaoTesteService>();
+        }
+
         public void Iniciar()
         {
             while (true) ManipularRequisicao();
@@ -57,7 +76,7 @@ namespace ByteBank.Portal.Infraestrutura
             #region Trabalhando com Controllers
             else
             {
-                var manipulador = new ManipuladorRequisicaoController();
+                var manipulador = new ManipuladorRequisicaoController(_container);
                 manipulador.Manipular(resposta, path);
             }
             #endregion
