@@ -50,7 +50,6 @@ C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\12- Web Forms\02- WAConhecendoC
 C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\12- Web Forms\02- WAConhecendoComponentes\02- WAConhecendoComponentes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\12- Web Forms\02- WAConhecendoComponentes\02- WAConhecendoComponentes\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\12- Web Forms\02- WAConhecendoComponentes\02- WAConhecendoComponentes\obj\Debug\02- WAConhecendoComponentes.csprojAssemblyReference.cache
-C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\12- Web Forms\02- WAConhecendoComponentes\02- WAConhecendoComponentes\obj\Debug\02- WAConhecendoComponentes.csproj.CoreCompileInputs.cache
 C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\12- Web Forms\02- WAConhecendoComponentes\02- WAConhecendoComponentes\obj\Debug\02- WAConhecendoComponentes.csproj.CopyComplete
 C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\12- Web Forms\02- WAConhecendoComponentes\02- WAConhecendoComponentes\obj\Debug\02- WAConhecendoComponentes.dll
 C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\12- Web Forms\02- WAConhecendoComponentes\02- WAConhecendoComponentes\obj\Debug\02- WAConhecendoComponentes.pdb
