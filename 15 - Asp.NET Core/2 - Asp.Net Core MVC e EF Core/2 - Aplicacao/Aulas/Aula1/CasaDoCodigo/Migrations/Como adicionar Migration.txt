@@ -1,0 +1,5 @@
+﻿Para criar uma migration para o entity framework acesse "Tools/Nuget Package Manager/Package Manager Console"
+
+Em seguida execute o seguinte comando "Add-Migration Inicial" onde "Inicial" é o nome da migration
+
+E apos execute "Update-Database -verbose" para atualizar o banco de dados de acordo com as atualizações
