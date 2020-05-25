@@ -1,6 +1,8 @@
 ﻿using CasaDoCodigo.Models;
 using CasaDoCodigo.Models.Interface.Repository;
 using CasaDoCodigo.Models.Interface.Services;
+using CasaDoCodigo.Models.Response;
+using CasaDoCodigo.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.Extensions.Configuration;
@@ -39,54 +41,56 @@ namespace CasaDoCodigo.Controllers
 
         #endregion
 
-        private readonly IProdutoRepository _produtoRepository;
-        private readonly IPedidoRepository _pedidoRepository;
-        private readonly ISessionService _sessionService;
+        private readonly IPedidoDb _pedidoDb;
 
-        public PedidoController(IConfiguration configuration, ISessionService sessionService, IProdutoRepository produtoRepository, IPedidoRepository pedidoRepository)
+        public PedidoController(IConfiguration configuration, IPedidoDb pedidoDb)
         {
-            _configuration = configuration;
-            _produtoRepository = produtoRepository;
-            _pedidoRepository = pedidoRepository;
-            _sessionService = sessionService;
+            _pedidoDb = pedidoDb;
         }
 
         public IActionResult Carrossel()
         {
-            return View(_produtoRepository.GetAll());
+            return View(_pedidoDb.ListarProdutos());
         }
 
         public IActionResult Carrinho(string codigo)
         {
-            var idPedido = _sessionService.GetPedidoId();
-            var pedido = _pedidoRepository.GetByParameter( p => p.Id == idPedido);
+            var pedido = _pedidoDb.AdicionarItemPedido(codigo);
 
-            if(pedido == null)
-            {
-                pedido = new Pedido();
-                _pedidoRepository.Save(pedido);
-                _sessionService.SetPedidoId(pedido.Id);
-            }
+            CarrinhoViewModel carrinho = new CarrinhoViewModel(pedido.Itens);
 
-            if (!string.IsNullOrEmpty(codigo))
-            {
-                _pedidoRepository.AddItem(codigo, pedido.Id);
-                pedido = _pedidoRepository.GetByParameter(p => p.Id == pedido.Id);
-            }
-
-            return View(pedido.Itens);
+            return View(carrinho);
         }
 
         public IActionResult Cadastro()
         {
-            return View();
+            var pedido = _pedidoDb.GetDadosPedido();
+
+            if(pedido == null)
+                return RedirectToAction("Carrossel");
+
+            return View(pedido.Cadastro);
         }
 
-        public IActionResult Resumo()
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Resumo(Cadastro cadastro)
         {
-            var idPedido = _sessionService.GetPedidoId();
-            var pedido = _pedidoRepository.GetByParameter(p => p.Id == idPedido);
-            return View(pedido);
+            if (ModelState.IsValid)
+            {
+                var pedido = _pedidoDb.AtualizarCadastro(cadastro);
+                return View(pedido);
+            }
+
+            return RedirectToAction("Cadastro");
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public UpdateQuantidadeResponse UpdateQuantidade([FromBody]ItemPedido itemPedido)
+        {
+            var response = _pedidoDb.AtualizarQuantidadeItemPedido(itemPedido);
+            return response;    
         }
     }
 }

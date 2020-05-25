@@ -56,6 +56,7 @@ namespace CasaDoCodigo
             services.AddTransient<IItemPedidoRepository, ItemPedidoRepository>();
             services.AddTransient<ICadastroRepository, CadastroRepository>();
             services.AddTransient<ISessionService, SessionService>();
+            services.AddTransient<IPedidoDb, PedidoDb>();
 
             #endregion
         }
@@ -73,10 +74,10 @@ namespace CasaDoCodigo
                 app.UseExceptionHandler("/Home/Error");
             }
 
+            app.UseStaticFiles();
+
             // Usando Session
             app.UseSession();
-
-            app.UseStaticFiles();
 
             app.UseMvc(routes =>
             {
