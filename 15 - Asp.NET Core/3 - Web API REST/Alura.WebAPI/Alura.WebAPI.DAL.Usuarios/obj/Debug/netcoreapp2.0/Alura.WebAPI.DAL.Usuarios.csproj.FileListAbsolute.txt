@@ -1,0 +1,8 @@
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\15 - Asp.NET Core\3 - Web API REST\Alura.WebAPI\Alura.WebAPI.DAL.Usuarios\bin\Debug\netcoreapp2.0\Alura.WebAPI.DAL.Usuarios.deps.json
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\15 - Asp.NET Core\3 - Web API REST\Alura.WebAPI\Alura.WebAPI.DAL.Usuarios\bin\Debug\netcoreapp2.0\Alura.WebAPI.DAL.Usuarios.dll
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\15 - Asp.NET Core\3 - Web API REST\Alura.WebAPI\Alura.WebAPI.DAL.Usuarios\bin\Debug\netcoreapp2.0\Alura.WebAPI.DAL.Usuarios.pdb
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\15 - Asp.NET Core\3 - Web API REST\Alura.WebAPI\Alura.WebAPI.DAL.Usuarios\obj\Debug\netcoreapp2.0\Alura.WebAPI.DAL.Usuarios.csproj.CoreCompileInputs.cache
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\15 - Asp.NET Core\3 - Web API REST\Alura.WebAPI\Alura.WebAPI.DAL.Usuarios\obj\Debug\netcoreapp2.0\Alura.WebAPI.DAL.Usuarios.AssemblyInfoInputs.cache
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\15 - Asp.NET Core\3 - Web API REST\Alura.WebAPI\Alura.WebAPI.DAL.Usuarios\obj\Debug\netcoreapp2.0\Alura.WebAPI.DAL.Usuarios.AssemblyInfo.cs
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\15 - Asp.NET Core\3 - Web API REST\Alura.WebAPI\Alura.WebAPI.DAL.Usuarios\obj\Debug\netcoreapp2.0\Alura.WebAPI.DAL.Usuarios.dll
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\15 - Asp.NET Core\3 - Web API REST\Alura.WebAPI\Alura.WebAPI.DAL.Usuarios\obj\Debug\netcoreapp2.0\Alura.WebAPI.DAL.Usuarios.pdb
