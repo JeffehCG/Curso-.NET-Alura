@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LoHJKK3VG9wyNNxskAfSwDwAu7bK4FzvXHj9NsPxnpuy+jEPPDSFeXloQQNzGWMgOgjPt9jFHv9PCZigsUQidA==",
+  "dgSpecHash": "eI9va1vI1RcIuNGda2xkoT8Qg1LacLxH4U/oajwItD3lbAAE0s8uPZYO3B1tHDY+nBts2b6f5QiC7cEdhTIstg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Bruno Kenji Tomine\\Documents\\GitHub\\Curso-.NET-Alura\\15 - Asp.NET Core\\3 - Web API REST\\Alura.WebAPI\\Alura.WebAPI.Api\\Alura.WebAPI.Api.csproj",
   "expectedPackageFiles": [
@@ -201,6 +201,11 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\swashbuckle.aspnetcore\\4.0.1\\swashbuckle.aspnetcore.4.0.1.nupkg.sha512",
+    "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\4.0.1\\swashbuckle.aspnetcore.annotations.4.0.1.nupkg.sha512",
+    "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\4.0.1\\swashbuckle.aspnetcore.swagger.4.0.1.nupkg.sha512",
+    "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\4.0.1\\swashbuckle.aspnetcore.swaggergen.4.0.1.nupkg.sha512",
+    "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\4.0.1\\swashbuckle.aspnetcore.swaggerui.4.0.1.nupkg.sha512",
     "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

@@ -16,6 +16,7 @@ namespace Alura.ListaLeitura.Api.Controllers.v1
     //[ApiVersion("1.0")]
     //[Route("api/[controller]")]
     [ApiVersion("1.0")]
+    [ApiExplorerSettings(GroupName = "v1")]
     [Route("api/v{version:apiVersion}/[controller]")] // Definindo estrutura de rota
     public class LivrosController : ControllerBase
     {

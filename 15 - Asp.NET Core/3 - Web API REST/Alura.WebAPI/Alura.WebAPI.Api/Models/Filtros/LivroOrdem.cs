@@ -5,7 +5,7 @@ using System.Linq;
 using System.Linq.Dynamic.Core; // Utilizado para OrderBy() poder aceitar um parametro String (Com o nome da propriedade)
 using System.Text;
 
-namespace Alura.WebAPI.Model.Filtros
+namespace Alura.WebAPI.Api.Models.Filtros
 {
     public static class LivroOrdemExtensions
     {

@@ -13,6 +13,7 @@ namespace Alura.ListaLeitura.Api.Controllers.v1
     [Authorize]
     [ApiController]
     [ApiVersion("1.0")]
+    [ApiExplorerSettings(GroupName = "v1")]
     [Route("api/v{version:apiVersion}/[controller]")]
     public class ListasLeituraController : ControllerBase
     {

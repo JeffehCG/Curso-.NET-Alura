@@ -18,7 +18,7 @@ namespace Alura.ListaLeitura.WebApp
 
         public void ConfigureServices(IServiceCollection services)
         {
-
+            #region Autenticação via Cookies
             // Utilizando Autenticação via Cookies
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
@@ -29,6 +29,9 @@ namespace Alura.ListaLeitura.WebApp
             // Utilizando o IHttpContextAccessor
             services.AddHttpContextAccessor();
 
+            #endregion
+
+            #region BaseAddress ApIs
             // Definindo BaseAddress para classe LivroApiClient
             services.AddHttpClient<LivroApiClient>(client => {
                 client.BaseAddress = new System.Uri("http://localhost:6000/api/v1.0/");
@@ -38,6 +41,8 @@ namespace Alura.ListaLeitura.WebApp
             services.AddHttpClient<AuthApiClient>(client => {
                 client.BaseAddress = new System.Uri("http://localhost:5000/api/");
             });
+
+            #endregion
 
             services.AddMvc();
         }

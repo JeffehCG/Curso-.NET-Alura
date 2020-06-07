@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Alura.ListaLeitura.Modelos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Alura.ListaLeitura.Modelos.Paginacao
+namespace Alura.WebAPI.Api.Models.Paginacao
 {
     public static class LivrosPaginadoExtensions
     {

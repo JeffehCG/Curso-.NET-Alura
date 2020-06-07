@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Alura.ListaLeitura.Modelos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace Alura.ListaLeitura.Modelos.Filtros
+namespace Alura.WebAPI.Api.Models.Filtros
 {
     public static class LivroFiltroExtensions
     {
