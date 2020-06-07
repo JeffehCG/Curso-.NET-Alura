@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Alura.ListaLeitura.Modelos;
+using Alura.ListaLeitura.Modelos.Filtros;
+using Alura.ListaLeitura.Modelos.Paginacao;
 using Alura.ListaLeitura.Persistencia;
+using Alura.WebAPI.Model.Filtros;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Alura.ListaLeitura.Api.Controllers
+namespace Alura.ListaLeitura.Api.Controllers.v2
 {
     [Authorize]
     [ApiController]
-    [Route("api/[controller]")] // Definindo estrutura de rota
+    [ApiVersion("2.0")] // Definindo versão
+    [Route("api/v{version:apiVersion}/[controller]")] // Definindo estrutura de rota ({version:apiVersion} tratando versão)
     public class LivrosController : ControllerBase
     {
         private readonly IRepository<Livro> _repo;
@@ -23,10 +27,18 @@ namespace Alura.ListaLeitura.Api.Controllers
 
         //http://localhost:64466/Livros
         [HttpGet]
-        public IActionResult Listar(int id)
+        public IActionResult Listar(
+            [FromQuery] LivroFiltro filtro,  // ex: livros?titulo=Teste&lista=lendo
+            [FromQuery] LivroOrdem ordem,    // ex: livros?ordenarpor=titulo
+            [FromQuery] Paginacao paginacao) // ex: livros?pagina=3&tamanho=5
         {
-            var lista = _repo.All.Select(l => l.ToApi()).ToList();
-            return Ok(lista);
+            var livroPaginado = _repo.All
+                .AplicaOrdem(ordem)
+                .AplicaFiltro(filtro)
+                .Select(l => l.ToApi())
+                .ToLivrosPaginado(paginacao);
+
+            return Ok(livroPaginado);
         }
 
         //http://localhost:64466/Livros/1

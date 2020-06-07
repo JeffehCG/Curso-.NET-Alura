@@ -31,7 +31,7 @@ namespace Alura.ListaLeitura.WebApp
 
             // Definindo BaseAddress para classe LivroApiClient
             services.AddHttpClient<LivroApiClient>(client => {
-                client.BaseAddress = new System.Uri("http://localhost:6000/api/");
+                client.BaseAddress = new System.Uri("http://localhost:6000/api/v1.0/");
             });
 
             // Definindo BaseAddress para classe AuthApiClient

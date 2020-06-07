@@ -1,9 +1,9 @@
 C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\15 - Asp.NET Core\3 - Web API REST\Alura.WebAPI\Alura.WebAPI.Model\bin\Debug\netcoreapp2.1\Alura.WebAPI.Model.deps.json
 C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\15 - Asp.NET Core\3 - Web API REST\Alura.WebAPI\Alura.WebAPI.Model\bin\Debug\netcoreapp2.1\Alura.WebAPI.Model.dll
 C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\15 - Asp.NET Core\3 - Web API REST\Alura.WebAPI\Alura.WebAPI.Model\bin\Debug\netcoreapp2.1\Alura.WebAPI.Model.pdb
-C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\15 - Asp.NET Core\3 - Web API REST\Alura.WebAPI\Alura.WebAPI.Model\obj\Debug\netcoreapp2.1\Alura.WebAPI.Model.csprojAssemblyReference.cache
-C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\15 - Asp.NET Core\3 - Web API REST\Alura.WebAPI\Alura.WebAPI.Model\obj\Debug\netcoreapp2.1\Alura.WebAPI.Model.csproj.CoreCompileInputs.cache
 C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\15 - Asp.NET Core\3 - Web API REST\Alura.WebAPI\Alura.WebAPI.Model\obj\Debug\netcoreapp2.1\Alura.WebAPI.Model.AssemblyInfoInputs.cache
 C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\15 - Asp.NET Core\3 - Web API REST\Alura.WebAPI\Alura.WebAPI.Model\obj\Debug\netcoreapp2.1\Alura.WebAPI.Model.AssemblyInfo.cs
 C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\15 - Asp.NET Core\3 - Web API REST\Alura.WebAPI\Alura.WebAPI.Model\obj\Debug\netcoreapp2.1\Alura.WebAPI.Model.dll
 C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\15 - Asp.NET Core\3 - Web API REST\Alura.WebAPI\Alura.WebAPI.Model\obj\Debug\netcoreapp2.1\Alura.WebAPI.Model.pdb
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\15 - Asp.NET Core\3 - Web API REST\Alura.WebAPI\Alura.WebAPI.Model\obj\Debug\netcoreapp2.1\Alura.WebAPI.Model.csprojAssemblyReference.cache
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\15 - Asp.NET Core\3 - Web API REST\Alura.WebAPI\Alura.WebAPI.Model\obj\Debug\netcoreapp2.1\Alura.WebAPI.Model.csproj.CoreCompileInputs.cache

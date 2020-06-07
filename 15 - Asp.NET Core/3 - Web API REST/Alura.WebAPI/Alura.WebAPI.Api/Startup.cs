@@ -8,6 +8,8 @@ using Alura.ListaLeitura.Persistencia;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -63,6 +65,19 @@ namespace Alura.WebAPI.Api
                     ValidAudience = "Postman"
                 };
             });
+
+            // Utilizando Versionamento (Biblioteca : Microsoft.AspNetCore.Mvc.Versioning)
+            services.AddApiVersioning( options => 
+            {
+                options.DefaultApiVersion = new ApiVersion(1, 0);
+                options.ReportApiVersions = true;
+                options.AssumeDefaultVersionWhenUnspecified = true;
+                // Definindo por onde sera recebido o parametro de versão
+                //options.ApiVersionReader = ApiVersionReader.Combine(
+                //        new QueryStringApiVersionReader("api-version"), // Receber o parametro de versão pela QueryString, com a chave expecificada
+                //        new HeaderApiVersionReader("api-version") // Receber o parametro de versão pelo header, com a chave expecificada
+                //    );
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -72,7 +87,7 @@ namespace Alura.WebAPI.Api
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseStaticFiles();
             app.UseAuthentication();
 
             app.UseMvc();

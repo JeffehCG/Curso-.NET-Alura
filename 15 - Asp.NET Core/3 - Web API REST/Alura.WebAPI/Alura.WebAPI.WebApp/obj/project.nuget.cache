@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/KS3kYSiRXaGDQIwDCZOQS8TD29DIyuQLg2ju/HVJH6af90qlR7TK2MYnST7Quid05Jk+pxNu0m2JKK2odH46w==",
+  "dgSpecHash": "edsaBDeHPHREgL3EI+nITMuw1/8X0c1VyM3fyFbIp600mxqA1xrJrVGxank6i361X8wejwv+FX9ppXIMDmbGWw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Bruno Kenji Tomine\\Documents\\GitHub\\Curso-.NET-Alura\\15 - Asp.NET Core\\3 - Web API REST\\Alura.WebAPI\\Alura.WebAPI.WebApp\\Alura.WebAPI.WebApp.csproj",
   "expectedPackageFiles": [
@@ -245,6 +245,7 @@
     "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.io.pipelines\\4.5.2\\system.io.pipelines.4.5.2.nupkg.sha512",
     "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
+    "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\system.linq.dynamic.core\\1.0.9\\system.linq.dynamic.core.1.0.9.nupkg.sha512",
     "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\system.linq.expressions\\4.3.0\\system.linq.expressions.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.linq.parallel\\4.3.0\\system.linq.parallel.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.linq.queryable\\4.0.1\\system.linq.queryable.4.0.1.nupkg.sha512",
