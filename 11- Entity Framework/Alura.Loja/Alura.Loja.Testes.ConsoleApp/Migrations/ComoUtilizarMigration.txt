@@ -1,0 +1,14 @@
+﻿        // Install-Package Microsoft.EntityFrameworkCore.Tools -Version 1.1.1
+        // Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 1.1
+
+        // Comandos para Criar nova Migration
+           Add-Migration NomeMigration 
+
+        // Comando para Atualizar Database com a migration criada
+           Update-Database
+
+        // Comando para Gerar Script de migração
+           Script-Migration
+
+        // Comando para Remover Migration
+           Remove-Migration
