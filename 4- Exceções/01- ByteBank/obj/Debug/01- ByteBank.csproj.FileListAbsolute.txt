@@ -12,3 +12,10 @@ C:\Users\dezje\Documents\Curso C#\4- Exceções\01- ByteBank\obj\Debug\01- ByteB
 C:\Users\dezje\Documents\Curso C#\4- Exceções\01- ByteBank\obj\Debug\01- ByteBank.csproj.CoreCompileInputs.cache
 C:\Users\dezje\Documents\Curso C#\4- Exceções\01- ByteBank\obj\Debug\01- ByteBank.exe
 C:\Users\dezje\Documents\Curso C#\4- Exceções\01- ByteBank\obj\Debug\01- ByteBank.pdb
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\4- Exceções\01- ByteBank\bin\Debug\01- ByteBank.exe.config
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\4- Exceções\01- ByteBank\bin\Debug\01- ByteBank.exe
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\4- Exceções\01- ByteBank\bin\Debug\01- ByteBank.pdb
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\4- Exceções\01- ByteBank\obj\Debug\01- ByteBank.csprojAssemblyReference.cache
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\4- Exceções\01- ByteBank\obj\Debug\01- ByteBank.csproj.CoreCompileInputs.cache
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\4- Exceções\01- ByteBank\obj\Debug\01- ByteBank.exe
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\4- Exceções\01- ByteBank\obj\Debug\01- ByteBank.pdb

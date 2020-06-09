@@ -5,3 +5,10 @@ C:\Users\dezje\Documents\Curso C#\6 - Strings, expressões regulares e classe Ob
 C:\Users\dezje\Documents\Curso C#\6 - Strings, expressões regulares e classe Object\TrabalhandoComStrings\obj\Debug\TrabalhandoComStrings.csproj.CoreCompileInputs.cache
 C:\Users\dezje\Documents\Curso C#\6 - Strings, expressões regulares e classe Object\TrabalhandoComStrings\obj\Debug\TrabalhandoComStrings.exe
 C:\Users\dezje\Documents\Curso C#\6 - Strings, expressões regulares e classe Object\TrabalhandoComStrings\obj\Debug\TrabalhandoComStrings.pdb
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\6 - Strings, expressões regulares e classe Object\TrabalhandoComStrings\bin\Debug\TrabalhandoComStrings.exe.config
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\6 - Strings, expressões regulares e classe Object\TrabalhandoComStrings\bin\Debug\TrabalhandoComStrings.exe
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\6 - Strings, expressões regulares e classe Object\TrabalhandoComStrings\bin\Debug\TrabalhandoComStrings.pdb
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\6 - Strings, expressões regulares e classe Object\TrabalhandoComStrings\obj\Debug\TrabalhandoComStrings.csprojAssemblyReference.cache
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\6 - Strings, expressões regulares e classe Object\TrabalhandoComStrings\obj\Debug\TrabalhandoComStrings.csproj.CoreCompileInputs.cache
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\6 - Strings, expressões regulares e classe Object\TrabalhandoComStrings\obj\Debug\TrabalhandoComStrings.exe
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\6 - Strings, expressões regulares e classe Object\TrabalhandoComStrings\obj\Debug\TrabalhandoComStrings.pdb

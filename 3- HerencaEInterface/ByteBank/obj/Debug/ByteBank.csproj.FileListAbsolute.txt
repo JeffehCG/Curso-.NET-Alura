@@ -5,3 +5,10 @@ C:\Users\dezje\Documents\Curso C#\3- HerencaEInterface\ByteBank\obj\Debug\ByteBa
 C:\Users\dezje\Documents\Curso C#\3- HerencaEInterface\ByteBank\obj\Debug\ByteBank.csproj.CoreCompileInputs.cache
 C:\Users\dezje\Documents\Curso C#\3- HerencaEInterface\ByteBank\obj\Debug\ByteBank.exe
 C:\Users\dezje\Documents\Curso C#\3- HerencaEInterface\ByteBank\obj\Debug\ByteBank.pdb
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\3- HerencaEInterface\ByteBank\bin\Debug\ByteBank.exe.config
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\3- HerencaEInterface\ByteBank\bin\Debug\ByteBank.exe
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\3- HerencaEInterface\ByteBank\bin\Debug\ByteBank.pdb
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\3- HerencaEInterface\ByteBank\obj\Debug\ByteBank.csprojAssemblyReference.cache
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\3- HerencaEInterface\ByteBank\obj\Debug\ByteBank.csproj.CoreCompileInputs.cache
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\3- HerencaEInterface\ByteBank\obj\Debug\ByteBank.exe
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\3- HerencaEInterface\ByteBank\obj\Debug\ByteBank.pdb

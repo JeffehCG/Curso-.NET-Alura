@@ -22,15 +22,15 @@ namespace Alura.Loja.Testes.ConsoleApp
             }
 
             Console.WriteLine("Exemplo Um Para Muitos");
-            //UmParaMuitos();
+            UmParaMuitos();
             RecuperarDadosUmParaMuitos();
 
             Console.WriteLine("Exemplo Muitos Para Muitos");
-            //MuitosParaMuitos();
+            MuitosParaMuitos();
             RecuperandoDadosMuitosParaMuitos();
 
             Console.WriteLine("Exemplo Um Para Um");
-            //UmParaUm();
+            UmParaUm();
             RecuperarDadosUmParaUm();
 
             QueryUmPoucoMaisComplexa();

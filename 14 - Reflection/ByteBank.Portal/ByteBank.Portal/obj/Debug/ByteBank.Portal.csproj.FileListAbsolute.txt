@@ -7,3 +7,13 @@ C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\14 - Reflection\ByteBank.Portal
 C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\14 - Reflection\ByteBank.Portal\ByteBank.Portal\bin\Debug\ByteBank.Service.dll
 C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\14 - Reflection\ByteBank.Portal\ByteBank.Portal\bin\Debug\ByteBank.Service.pdb
 C:\Users\dezje\Documents\GitHub\Curso-.NET-Alura\14 - Reflection\ByteBank.Portal\ByteBank.Portal\obj\Debug\ByteBank.Portal.csproj.CopyComplete
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\14 - Reflection\ByteBank.Portal\ByteBank.Portal\bin\Debug\ByteBank.Portal.exe.config
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\14 - Reflection\ByteBank.Portal\ByteBank.Portal\bin\Debug\ByteBank.Portal.exe
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\14 - Reflection\ByteBank.Portal\ByteBank.Portal\bin\Debug\ByteBank.Portal.pdb
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\14 - Reflection\ByteBank.Portal\ByteBank.Portal\bin\Debug\ByteBank.Service.dll
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\14 - Reflection\ByteBank.Portal\ByteBank.Portal\bin\Debug\ByteBank.Service.pdb
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\14 - Reflection\ByteBank.Portal\ByteBank.Portal\obj\Debug\ByteBank.Portal.csprojAssemblyReference.cache
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\14 - Reflection\ByteBank.Portal\ByteBank.Portal\obj\Debug\ByteBank.Portal.csproj.CoreCompileInputs.cache
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\14 - Reflection\ByteBank.Portal\ByteBank.Portal\obj\Debug\ByteBank.Portal.csproj.CopyComplete
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\14 - Reflection\ByteBank.Portal\ByteBank.Portal\obj\Debug\ByteBank.Portal.exe
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\14 - Reflection\ByteBank.Portal\ByteBank.Portal\obj\Debug\ByteBank.Portal.pdb

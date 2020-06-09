@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MlfglQrfQwtcGwfp+kmrHDO7BTDYS6hZ3qfmFhxmlrq5KMq8AjJn/Fe/S5f/wSzqFG92wPdkglz+DXjRWrtS5w==",
+  "dgSpecHash": "FhYBvrZXaEivLT+STtjBu7mH5ey+KP65EBCwuXCMucrf9f7MBgNJLk4E5fsaderYUqdvL4Il7jgoylfGP2eL4Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bruno Kenji Tomine\\Documents\\GitHub\\Curso-.NET-Alura\\15 - .NET Core\\1 - Conceitos, utilizando MVC\\Alura.ListaLeitura\\Alura.ListaLeitura.App\\Alura.ListaLeitura.App.csproj",
+  "projectFilePath": "C:\\Users\\Bruno Kenji Tomine\\Documents\\GitHub\\Curso-.NET-Alura\\15 - Asp.NET Core\\1 - Primeiros conceitos\\Primeiros conceitos\\Alura.ListaLeitura.App\\Alura.ListaLeitura.App.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\libuv\\1.10.0\\libuv.1.10.0.nupkg.sha512",
     "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\microsoft.aspnetcore\\2.0.1\\microsoft.aspnetcore.2.0.1.nupkg.sha512",
@@ -64,7 +64,7 @@
     "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections.nongeneric\\4.3.0\\system.collections.nongeneric.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.collections.specialized\\4.3.0\\system.collections.specialized.4.3.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
+    "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\system.componentmodel\\4.3.0\\system.componentmodel.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.componentmodel.primitives\\4.3.0\\system.componentmodel.primitives.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.componentmodel.typeconverter\\4.3.0\\system.componentmodel.typeconverter.4.3.0.nupkg.sha512",
     "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
@@ -105,7 +105,7 @@
     "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\system.threading.tasks.extensions\\4.4.0\\system.threading.tasks.extensions.4.4.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
+    "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512"
   ],

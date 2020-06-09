@@ -5478,11 +5478,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bruno Kenji Tomine\\Documents\\GitHub\\Curso-.NET-Alura\\15 - .NET Core\\1 - Conceitos, utilizando MVC\\Alura.ListaLeitura\\Alura.ListaLeitura.App\\Alura.ListaLeitura.App.csproj",
+      "projectUniqueName": "C:\\Users\\Bruno Kenji Tomine\\Documents\\GitHub\\Curso-.NET-Alura\\15 - Asp.NET Core\\1 - Primeiros conceitos\\Primeiros conceitos\\Alura.ListaLeitura.App\\Alura.ListaLeitura.App.csproj",
       "projectName": "Alura.ListaLeitura.App",
-      "projectPath": "C:\\Users\\Bruno Kenji Tomine\\Documents\\GitHub\\Curso-.NET-Alura\\15 - .NET Core\\1 - Conceitos, utilizando MVC\\Alura.ListaLeitura\\Alura.ListaLeitura.App\\Alura.ListaLeitura.App.csproj",
+      "projectPath": "C:\\Users\\Bruno Kenji Tomine\\Documents\\GitHub\\Curso-.NET-Alura\\15 - Asp.NET Core\\1 - Primeiros conceitos\\Primeiros conceitos\\Alura.ListaLeitura.App\\Alura.ListaLeitura.App.csproj",
       "packagesPath": "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bruno Kenji Tomine\\Documents\\GitHub\\Curso-.NET-Alura\\15 - .NET Core\\1 - Conceitos, utilizando MVC\\Alura.ListaLeitura\\Alura.ListaLeitura.App\\obj\\",
+      "outputPath": "C:\\Users\\Bruno Kenji Tomine\\Documents\\GitHub\\Curso-.NET-Alura\\15 - Asp.NET Core\\1 - Primeiros conceitos\\Primeiros conceitos\\Alura.ListaLeitura.App\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5534,7 +5534,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

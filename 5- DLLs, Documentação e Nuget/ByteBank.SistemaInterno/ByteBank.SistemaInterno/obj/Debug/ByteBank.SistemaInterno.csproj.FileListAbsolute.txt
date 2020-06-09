@@ -7,3 +7,13 @@ C:\Users\dezje\Documents\Curso C#\5- DLLs, Documentação e Nuget\ByteBank.Siste
 C:\Users\dezje\Documents\Curso C#\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.csproj.CopyComplete
 C:\Users\dezje\Documents\Curso C#\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.exe
 C:\Users\dezje\Documents\Curso C#\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.pdb
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\ByteBank.SistemaInterno.exe.config
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\ByteBank.SistemaInterno.exe
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\ByteBank.SistemaInterno.pdb
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\ByteBank.Modelos.dll
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\bin\Debug\ByteBank.Modelos.xml
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.csprojAssemblyReference.cache
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.csproj.CoreCompileInputs.cache
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.csproj.CopyComplete
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.exe
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\5- DLLs, Documentação e Nuget\ByteBank.SistemaInterno\ByteBank.SistemaInterno\obj\Debug\ByteBank.SistemaInterno.pdb

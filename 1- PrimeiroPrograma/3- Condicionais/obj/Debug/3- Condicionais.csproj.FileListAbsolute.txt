@@ -5,3 +5,10 @@ C:\Users\dezje\Documents\Curso C#\1- PrimeiroPrograma\3- Condicionais\obj\Debug\
 C:\Users\dezje\Documents\Curso C#\1- PrimeiroPrograma\3- Condicionais\obj\Debug\3- Condicionais.csproj.CoreCompileInputs.cache
 C:\Users\dezje\Documents\Curso C#\1- PrimeiroPrograma\3- Condicionais\obj\Debug\3- Condicionais.exe
 C:\Users\dezje\Documents\Curso C#\1- PrimeiroPrograma\3- Condicionais\obj\Debug\3- Condicionais.pdb
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\1- PrimeiroPrograma\3- Condicionais\bin\Debug\3- Condicionais.exe.config
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\1- PrimeiroPrograma\3- Condicionais\bin\Debug\3- Condicionais.exe
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\1- PrimeiroPrograma\3- Condicionais\bin\Debug\3- Condicionais.pdb
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\1- PrimeiroPrograma\3- Condicionais\obj\Debug\3- Condicionais.csprojAssemblyReference.cache
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\1- PrimeiroPrograma\3- Condicionais\obj\Debug\3- Condicionais.csproj.CoreCompileInputs.cache
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\1- PrimeiroPrograma\3- Condicionais\obj\Debug\3- Condicionais.exe
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\1- PrimeiroPrograma\3- Condicionais\obj\Debug\3- Condicionais.pdb

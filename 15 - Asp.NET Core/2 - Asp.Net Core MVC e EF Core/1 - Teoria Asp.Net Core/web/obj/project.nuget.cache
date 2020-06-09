@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vdg8vmbcrvGEh/Ip7wpGnbkQFLq+JSw9jos4y/PSJsXOB0aAVbbxqAyuhZkx+TWtdUmvKCEa7KCHOs0ryKfr+A==",
+  "dgSpecHash": "onyTUlLGGip3C72fn1pncLUyHMIcPYBM/rKIHcrMOpjoLn8bk0AlS548vqiST995eZy05KjwP1ddsLn7cod5Dw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Bruno Kenji Tomine\\Documents\\GitHub\\Curso-.NET-Alura\\15 - Asp.NET Core\\2 - Asp.Net Core MVC e EF Core\\1 - Teoria Asp.Net Core\\web\\web.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Bruno Kenji Tomine\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
   "logs": []
 }
