@@ -566,7 +566,6 @@ C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\11- Entity Framewo
 C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\11- Entity Framework\2\Alura.Filmes\Alura.Filmes.App\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\11- Entity Framework\2\Alura.Filmes\Alura.Filmes.App\bin\Debug\System.Interactive.Async.xml
 C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\11- Entity Framework\2\Alura.Filmes\Alura.Filmes.App\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\11- Entity Framework\2\Alura.Filmes\Alura.Filmes.App\obj\Debug\Alura.Filmes.App.csprojAssemblyReference.cache
 C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\11- Entity Framework\2\Alura.Filmes\Alura.Filmes.App\obj\Debug\Alura.Filmes.App.exe.config
 C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\11- Entity Framework\2\Alura.Filmes\Alura.Filmes.App\obj\Debug\Alura.Filmes.App.csproj.CoreCompileInputs.cache
 C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\11- Entity Framework\2\Alura.Filmes\Alura.Filmes.App\obj\Debug\Alura.Filmes.App.csproj.CopyComplete
@@ -714,3 +713,4 @@ C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\11- Entity Framewo
 C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\11- Entity Framework\2\Alura.FilmesModel\Alura.Filmes.App\obj\Debug\Alura.Filmes.App.csproj.CopyComplete
 C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\11- Entity Framework\2\Alura.FilmesModel\Alura.Filmes.App\obj\Debug\Alura.Filmes.App.exe
 C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\11- Entity Framework\2\Alura.FilmesModel\Alura.Filmes.App\obj\Debug\Alura.Filmes.App.pdb
+C:\Users\Bruno Kenji Tomine\Documents\GitHub\Curso-.NET-Alura\11- Entity Framework\2\Alura.Filmes\Alura.Filmes.App\obj\Debug\Alura.Filmes.App.csprojAssemblyReference.cache

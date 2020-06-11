@@ -125,6 +125,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Dados\AluraFilmesContext.cs" />
+    <Compile Include="Dados\AtorConfiguration.cs" />
+    <Compile Include="Dados\CategoriaConfiguration.cs" />
+    <Compile Include="Dados\FilmeAtorConfiguration.cs" />
+    <Compile Include="Dados\FilmeCategoriaConfiguration.cs" />
+    <Compile Include="Dados\FilmeConfiguration.cs" />
+    <Compile Include="Dados\IdiomaConfiguration.cs" />
+    <Compile Include="Migrations\20200611000852_FilmeECategoria.cs" />
+    <Compile Include="Migrations\20200611000852_FilmeECategoria.designer.cs">
+      <DependentUpon>20200611000852_FilmeECategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20200611005531_Idiomas.cs" />
+    <Compile Include="Migrations\20200611005531_Idiomas.designer.cs">
+      <DependentUpon>20200611005531_Idiomas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20200611012552_AtualizandoAtor.cs" />
+    <Compile Include="Migrations\20200611012552_AtualizandoAtor.designer.cs">
+      <DependentUpon>20200611012552_AtualizandoAtor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Negocio\Idioma.cs" />
     <Compile Include="Extensions\DbContextExtensions.cs" />
     <Compile Include="Migrations\20200610000439_Inicial.cs" />
     <Compile Include="Migrations\20200610000439_Inicial.designer.cs">
@@ -132,6 +151,10 @@
     </Compile>
     <Compile Include="Migrations\AluraFilmesContextModelSnapshot.cs" />
     <Compile Include="Negocio\Ator.cs" />
+    <Compile Include="Negocio\Categoria.cs" />
+    <Compile Include="Negocio\Filme.cs" />
+    <Compile Include="Negocio\FilmeAtor.cs" />
+    <Compile Include="Negocio\FilmeCategoria.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

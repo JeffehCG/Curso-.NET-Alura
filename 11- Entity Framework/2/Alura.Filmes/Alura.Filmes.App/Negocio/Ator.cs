@@ -23,6 +23,13 @@ namespace Alura.Filmes.App.Negocio
         //[Column("last_name", TypeName = "varchar(45)")]
         public string UltimoNome { get; set; }
 
+        public IList<FilmeAtor> Filmes { get; set; }
+
+        public Ator()
+        {
+            this.Filmes = new List<FilmeAtor>();
+        }
+
         public override string ToString()
         {
             return $"Ator ({Id}) {PrimeiroNome} {UltimoNome}";

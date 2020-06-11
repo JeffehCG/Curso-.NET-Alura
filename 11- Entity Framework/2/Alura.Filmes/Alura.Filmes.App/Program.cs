@@ -12,21 +12,13 @@ namespace Alura.Filmes.App
     {
         static void Main(string[] args)
         {
-            using(var context = new AluraFilmesContext())
-            {
-                context.LogSQLToConsole();
+            UtilizandoShadowProperties();
 
-                // Listando Atores
-                var atores = context.Atores.ToList();
-                foreach (var item in atores)
-                {
-                    Console.WriteLine(item);
-                }
+            ListarDadosBanco();
 
-                UtilizandoShadowProperties();
+            ListarDadosRelacionalComFiltro();
 
-                Console.ReadLine();
-            }
+            Console.ReadLine();
         }
 
         public static void UtilizandoShadowProperties()
@@ -57,8 +49,75 @@ namespace Alura.Filmes.App
                 {
                     Console.WriteLine(item + " - " + context.Entry(item).Property("last_update").CurrentValue);
                 }
+            }
+        }
 
-                Console.ReadLine();
+        public static void ListarDadosBanco()
+        {
+            using (var context = new AluraFilmesContext())
+            {
+                context.LogSQLToConsole();
+
+                // Listando Atores
+                var atores = context.Atores.ToList();
+                foreach (var item in atores)
+                {
+                    Console.WriteLine(item);
+                }
+
+                // Listando Filmes
+                var filmes = context.Filmes.ToList();
+                foreach (var item in filmes)
+                {
+                    Console.WriteLine(item);
+                }
+
+                // Listando Relacionamento Filmes/Ator
+                var filme = context.Filmes
+                        .Include(f => f.Atores)
+                        .ThenInclude(fa => fa.Ator)
+                        .First();
+
+                Console.WriteLine(filme);
+                foreach (var item in filme.Atores)
+                {
+                    Console.WriteLine(item.Ator);
+                }
+
+                // Listando Relacionamento Filme/Categoria
+                var categoria = context.Categorias
+                    .Include(c => c.Filmes)
+                    .ThenInclude(fc => fc.Filme)
+                    .First();
+
+                Console.WriteLine(categoria);
+                foreach (var item in categoria.Filmes)
+                {
+                    Console.WriteLine(item.Filme);
+                }
+
+            }
+        }
+
+        private static void ListarDadosRelacionalComFiltro()
+        {
+            using (var context = new AluraFilmesContext())
+            {
+                // Listando Relacionamento Filme/Idiomas
+                var idiomas = context.Idiomas
+                    .Include(c => c.FilmesFalados);
+
+                foreach (var idioma in idiomas)
+                {
+                    Console.WriteLine(idioma);
+
+                    Console.WriteLine("Filmes Falados");
+                    foreach (var filmesFalados in idioma.FilmesFalados)
+                    {
+                        Console.WriteLine(filmesFalados);
+                    }
+                    Console.WriteLine("\n");
+                }
             }
         }
     }
