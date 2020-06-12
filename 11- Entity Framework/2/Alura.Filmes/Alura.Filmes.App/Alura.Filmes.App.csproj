@@ -131,6 +131,7 @@
     <Compile Include="Dados\FilmeCategoriaConfiguration.cs" />
     <Compile Include="Dados\FilmeConfiguration.cs" />
     <Compile Include="Dados\IdiomaConfiguration.cs" />
+    <Compile Include="Extensions\EnumClassificacaoIndicativaExtensions.cs" />
     <Compile Include="Migrations\20200611000852_FilmeECategoria.cs" />
     <Compile Include="Migrations\20200611000852_FilmeECategoria.designer.cs">
       <DependentUpon>20200611000852_FilmeECategoria.cs</DependentUpon>
@@ -143,6 +144,11 @@
     <Compile Include="Migrations\20200611012552_AtualizandoAtor.designer.cs">
       <DependentUpon>20200611012552_AtualizandoAtor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20200612000831_Classificacao.cs" />
+    <Compile Include="Migrations\20200612000831_Classificacao.designer.cs">
+      <DependentUpon>20200612000831_Classificacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Negocio\EnumClassificacaoIndicativa.cs" />
     <Compile Include="Negocio\Idioma.cs" />
     <Compile Include="Extensions\DbContextExtensions.cs" />
     <Compile Include="Migrations\20200610000439_Inicial.cs" />

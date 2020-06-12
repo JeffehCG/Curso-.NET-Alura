@@ -62,6 +62,16 @@ namespace Alura.Filmes.App.Dados
                 .HasOne(f => f.IdiomaOriginal)
                 .WithMany(i => i.FilmesOriginais)
                 .HasForeignKey("original_language_id");
+            
+            // Coluna com Constraint de restrição (Aceita apenas valores determinados pelo banco)
+            // Script de criação da constraint colocado manualmente na migration Classificacao
+            builder
+                .Property(f => f.TextoClassificacao)
+                .HasColumnName("rating")
+                .HasColumnType("varchar(10)");
+
+            builder
+                .Ignore(f => f.Classificacao); // Ignorando propriedade da classe para o mapeamento
         }
     }
 }

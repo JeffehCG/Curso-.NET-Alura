@@ -3,6 +3,7 @@ using Alura.Filmes.App.Extensions;
 using Alura.Filmes.App.Negocio;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 
@@ -17,6 +18,8 @@ namespace Alura.Filmes.App
             ListarDadosBanco();
 
             ListarDadosRelacionalComFiltro();
+
+            UtilizandoEnumEConstraint();
 
             Console.ReadLine();
         }
@@ -118,6 +121,27 @@ namespace Alura.Filmes.App
                     }
                     Console.WriteLine("\n");
                 }
+            }
+        }
+
+        private static void UtilizandoEnumEConstraint()
+        {
+            using (var context = new AluraFilmesContext())
+            {
+                var filme = new Filme()
+                {
+                    Titulo = "Senho dos Anéis",
+                    Duracao = 120,
+                    AnoLancamento = "2000",
+                    Classificacao = EnumClassificacaoIndicativa.MaioresQue18,
+                    IdiomaFalado = context.Idiomas.First()
+                };
+
+                context.Filmes.Add(filme);
+                //context.SaveChanges();
+
+                var filmeInserido = context.Filmes.First(f => f.Titulo == "Senho dos Anéis");
+                Console.WriteLine(filmeInserido + " - " + filmeInserido.TextoClassificacao);
             }
         }
     }
