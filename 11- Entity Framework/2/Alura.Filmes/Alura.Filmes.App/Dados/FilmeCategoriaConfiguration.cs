@@ -23,6 +23,12 @@ namespace Alura.Filmes.App.Dados
                 .Property<byte>("category_id");
 
             builder
+                .Property<DateTime>("last_update")
+                .HasColumnType("datetime")
+                .HasDefaultValueSql("getdate()")
+                .IsRequired();
+
+            builder
                 .HasKey("film_id", "category_id");
 
             builder

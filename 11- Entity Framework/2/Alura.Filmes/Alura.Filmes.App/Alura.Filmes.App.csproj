@@ -127,10 +127,13 @@
     <Compile Include="Dados\AluraFilmesContext.cs" />
     <Compile Include="Dados\AtorConfiguration.cs" />
     <Compile Include="Dados\CategoriaConfiguration.cs" />
+    <Compile Include="Dados\ClienteConfiguration.cs" />
     <Compile Include="Dados\FilmeAtorConfiguration.cs" />
     <Compile Include="Dados\FilmeCategoriaConfiguration.cs" />
     <Compile Include="Dados\FilmeConfiguration.cs" />
+    <Compile Include="Dados\FuncionarioConfiguration.cs" />
     <Compile Include="Dados\IdiomaConfiguration.cs" />
+    <Compile Include="Dados\PessoaConfiguration.cs" />
     <Compile Include="Extensions\EnumClassificacaoIndicativaExtensions.cs" />
     <Compile Include="Migrations\20200611000852_FilmeECategoria.cs" />
     <Compile Include="Migrations\20200611000852_FilmeECategoria.designer.cs">
@@ -148,7 +151,17 @@
     <Compile Include="Migrations\20200612000831_Classificacao.designer.cs">
       <DependentUpon>20200612000831_Classificacao.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20200613003537_Pessoa-View-Procedure.cs" />
+    <Compile Include="Migrations\20200613003537_Pessoa-View-Procedure.designer.cs">
+      <DependentUpon>20200613003537_Pessoa-View-Procedure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20200613005156_CorrecaoFilmeCategoria.cs" />
+    <Compile Include="Migrations\20200613005156_CorrecaoFilmeCategoria.designer.cs">
+      <DependentUpon>20200613005156_CorrecaoFilmeCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Negocio\Cliente.cs" />
     <Compile Include="Negocio\EnumClassificacaoIndicativa.cs" />
+    <Compile Include="Negocio\Funcionario.cs" />
     <Compile Include="Negocio\Idioma.cs" />
     <Compile Include="Extensions\DbContextExtensions.cs" />
     <Compile Include="Migrations\20200610000439_Inicial.cs" />
@@ -161,6 +174,7 @@
     <Compile Include="Negocio\Filme.cs" />
     <Compile Include="Negocio\FilmeAtor.cs" />
     <Compile Include="Negocio\FilmeCategoria.cs" />
+    <Compile Include="Negocio\Pessoa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
