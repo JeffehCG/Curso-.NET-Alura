@@ -1,6 +1,7 @@
 ﻿using ByteBank.Core.Model;
 using ByteBank.Core.Repository;
 using ByteBank.Core.Service;
+using ByteBank.View.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,7 @@ namespace ByteBank.View
     {
         private readonly ContaClienteRepository r_Repositorio;
         private readonly ContaClienteService r_Servico;
+        private CancellationTokenSource _cts;
 
         public MainWindow()
         {
@@ -32,58 +34,109 @@ namespace ByteBank.View
             r_Servico = new ContaClienteService();
         }
 
-        private void BtnProcessar_Click(object sender, RoutedEventArgs e)
+        private async void BtnProcessar_Click(object sender, RoutedEventArgs e)
         {
             BtnProcessar.IsEnabled = false;
 
+            // Atribuindo valor ao token de cancelamento
+            _cts = new CancellationTokenSource();
+
             var contas = r_Repositorio.GetContaClientes();
 
-            var resultado = new List<string>();
+            PgsProgresso.Maximum = contas.Count();
 
-            AtualizarView(new List<string>(), TimeSpan.Zero);
+            LimparView();
 
             var inicio = DateTime.Now;
 
-            // Utilizando Tasks
-            // O .NET utiliza a classe TaskScheduler, que define quando e aonde a Task sera executada, divinindo as mesmas pelos nucleos (E otimizando o processamento)
-            var contasTarefas = contas.Select(conta =>
+            BtnCancelar.IsEnabled = true;
+
+            // ByteBankProgress classe criada pela gente, que faz o mesmo papal que a classe Progress do .NET
+            //var byteBanckProgress = new Utils.ByteBankProgress<string>(str => 
+            //{
+            //    PgsProgresso.Value++;
+            //});
+
+            // Mesma implementação que acima, porem utilizando classe ja pronto do .NET
+            var progress = new Progress<string>(str =>
             {
-                // Criando uma tarefa para cada conta
-                return Task.Factory.StartNew(() => // Factory utiliza o TaskScheduler Default
-                {
-                    var resultadoProcessamento = r_Servico.ConsolidarMovimentacao(conta);
-                    resultado.Add(resultadoProcessamento);
-                });
-            }).ToArray(); // Utilizando o ToArray para executar as Tasks (O link só cria as instancias quando necessrio, ou seja, quando a variavel for iniciada)
+                PgsProgresso.Value++; // Ação que sera executada para atualizar barra de progresso dentro do ConsolidarContas()
+            });
 
-            // Travando a aplicação até que todas as tarefas estiverem finalizadas
-            //Task.WaitAll(contasTarefas);
+            try
+            {
+                // Utilizando async await
+                var resultado = await ConsolidarContas(contas, progress, _cts.Token);
 
-            // Pegando o contexto atual (A Thread principal)
-            var contextThread = TaskScheduler.FromCurrentSynchronizationContext(); // Como no java script : that = this; kkkk
-
-            // Um encadeamento de tarefas (Um só sera executada quando a anterior for concluida)
-            Task.WhenAll(contasTarefas)
-                .ContinueWith(task => // So sera executado quando as task de contasTarefas forem concluidas
-                {
-                    var fim = DateTime.Now;
-                    AtualizarView(resultado, fim - inicio);
-
-                }, contextThread) // Passando o contexto principal como parametro para task a ser executa (Para não dar erro de contexto diferente)
-                .ContinueWith(task =>
-                {
-                    BtnProcessar.IsEnabled = true;
-                }, contextThread);
+                // Codigo abaixo só sera executo assim que as Tasks forem concluidas
+                var fim = DateTime.Now;
+                AtualizarView(resultado, fim - inicio);
+            }
+            catch (Exception)
+            {
+                TxtTempo.Text = "Operação cancelada pelo usuario";
+                PgsProgresso.Value = 0;
+            }
+            finally
+            {
+                BtnCancelar.IsEnabled = false;
+                BtnProcessar.IsEnabled = true;
+            }     
         }
 
-        private void AtualizarView(List<String> result, TimeSpan elapsedTime)
+        private async Task<string[]> ConsolidarContas(IEnumerable<ContaCliente> contas, IProgress<string> reportadorDeProgresso, CancellationToken ct)
+        {
+
+            var tasks = contas.Select(conta =>
+            {
+                return Task.Factory.StartNew(() =>
+                {
+                    // Verificando se a tarefa foi cancelada em tempo de execução
+                    if (ct.IsCancellationRequested)
+                    {
+                        throw new OperationCanceledException(ct);
+                    }
+
+                    var resultadoConsolidacao = r_Servico.ConsolidarMovimentacao(conta, ct);
+
+                    // Efetuando a atualização da barra de progresso
+                    reportadorDeProgresso.Report(resultadoConsolidacao);
+
+                    // Outra meneira de verificar se a tarefa foi cancelada
+                    ct.ThrowIfCancellationRequested();
+
+                    return resultadoConsolidacao;
+                }, ct); // Passando o CancellationToken como parametro, para ele não iniciar tarefas caso o usuario tenho cancelado a requisição
+            });
+
+            var resultado = await Task.WhenAll(tasks);
+            return resultado;
+        }
+
+        private void BtnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            BtnCancelar.IsEnabled = false;
+
+            // Cancelando Tarefas
+            _cts.Cancel();
+        }
+
+        private void LimparView()
+        {
+            LstResultados.ItemsSource = null;
+            TxtTempo.Text = null;
+            PgsProgresso.Value = 0;
+        }
+
+        private void AtualizarView(IEnumerable<String> result, TimeSpan elapsedTime)
         {
             var tempoDecorrido = $"{ elapsedTime.Seconds }.{ elapsedTime.Milliseconds} segundos!";
-            var mensagem = $"Processamento de {result.Count} clientes em {tempoDecorrido}";
+            var mensagem = $"Processamento de {result.Count()} clientes em {tempoDecorrido}";
 
             LstResultados.ItemsSource = result;
             TxtTempo.Text = mensagem;
         }
+
 
         #region Aula 1 - Utilizando Threads
         private void UtilizandoThreads()
@@ -197,11 +250,12 @@ namespace ByteBank.View
                     AtualizarView(resultado, fim - inicio);
 
                 }, contextThread) // Passando o contexto principal como parametro para task a ser executa (Para não dar erro de contexto diferente)
-                .ContinueWith(task =>
+                .ContinueWith(task => // task sempre é u resultado da task anterior
                 {
                     BtnProcessar.IsEnabled = true;
                 }, contextThread);
         }
         #endregion
+
     }
 }
